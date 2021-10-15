@@ -1,13 +1,9 @@
 ---
-
 layout: default
-title: Tasks
+title: Data Description
 nav_order: 1
 
-
 ---
-
-[toc]
 
 ## Introduction
 

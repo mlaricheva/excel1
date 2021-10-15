@@ -12,8 +12,9 @@ nav_order: 1
 
 *Getting familiar with basic objects in Excel* 
 
-**Open new workbook**
+Step 1
 {: .label .label-step}
+**Open new workbook**
 Choose File -> New in the Excel menu or press Ctrl+N (Cmd+N on Mac)
 ![](images/image-20210926205209032.png)
 {: .step}

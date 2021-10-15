@@ -16,13 +16,13 @@ nav_order: 1
 
   Choose File -> New in the Excel menu or press Ctrl+N (Cmd+N on Mac)
 
-  ![](/Users/maria/Library/Application Support/typora-user-images/image-20210926205209032.png)
+  ![](/images/image-20210926205209032.png)
 
 - [ ] **Create new worksheet.**
 
   In the opened workbook click on a plus in the bottom panel on the left 
 
-  ![image-20210926205404343](/Users/maria/Library/Application Support/typora-user-images/image-20210926205404343.png)
+  ![image-20210926205404343](/images/image-20210926205404343.png)
 
 - [ ] Read more about difference between Workbook and Worksheet objects [SOURCE]
 
@@ -42,7 +42,7 @@ Most of the data is defined as a General type, unless specified otherwise. To le
 
   Select values in `District Code` column (or select all the values in the column by clicking on the `A` in the column names pane) and then select **Text** instead of General
 
-  ![](/Users/maria/Library/Application Support/typora-user-images/image-20210926211001795.png)
+  ![](/images/image-20210926211001795.png)
 
 ### Number as Dates
 
@@ -70,7 +70,7 @@ We now can fill the rest of the patern using Autofill option.
 
 - [ ] **Select first 5 rows of `Group-District Code` column and drag the fill handle down**
 
-  ![](/Users/maria/Library/Application Support/typora-user-images/image-20210926212807828.png)
+  ![](/images/image-20210926212807828.png)
 
 #### Link: Microsoft guide on using autofill
 
@@ -86,13 +86,13 @@ https://support.microsoft.com/en-us/office/copy-a-formula-by-dragging-the-fill-h
 
   **Hint**: Applying Filter allows to use different sorting options as well
 
-  ![](/Users/maria/Library/Application Support/typora-user-images/image-20210926213258804.png)
+  ![](/images/image-20210926213258804.png)
 
 - [ ] **Add another level of sorting, `District Code`.** 
 
   Follow the previous step now for `District Code` column, or use Sort option in the Data menu to add several rules and change their hierarchies 
 
-  ![](/Users/maria/Library/Application Support/typora-user-images/image-20210926213913533.png)
+  ![](/images/image-20210926213913533.png)
 
 ### Filter 
 
@@ -100,19 +100,19 @@ https://support.microsoft.com/en-us/office/copy-a-formula-by-dragging-the-fill-h
 
 - [ ] **Apply Filter (located in the Data menu) to the `District Code` column;**
 
-  ![](/Users/maria/Library/Application Support/typora-user-images/image-20210926214341684.png)
+  ![](/images/image-20210926214341684.png)
 
 - [ ] **Select rows with blank District Code;**
 
-  ![](/Users/maria/Library/Application Support/typora-user-images/image-20210926214441951.png)
+  ![](/images/image-20210926214441951.png)
 
 - [ ] **Right click on selected rows and select option "Delete Rows"**;
 
-  ![](/Users/maria/Library/Application Support/typora-user-images/image-20210926214539172.png)
+  ![](/images/image-20210926214539172.png)
 
 - [ ] **Make sure you do not have any blanks left**
 
-  ![](/Users/maria/Library/Application Support/typora-user-images/image-20210926214706616.png)
+  ![](/images/image-20210926214706616.png)
 
 #### Link: 3 ways to remove empty rows
 
@@ -126,21 +126,21 @@ https://www.ablebits.com/office-addins-blog/2013/10/01/remove-blank-rows-in-exce
 
   In the Find&Select option of main menu select Replace option or click Ctrl+H (both for PC and Mac);
 
-  ![](/Users/maria/Library/Application Support/typora-user-images/image-20210926214917173.png)
+  ![](/images/image-20210926214917173.png)
 
 - [ ] **Replace "Msk" with blank.** 
 
   Do not put anything in the Replace field, not even a space
 
-  ![](/Users/maria/Library/Application Support/typora-user-images/image-20210926215139163.png)
+  ![](/images/image-20210926215139163.png)
 
 - [ ] **Use Go-To-Special to highlight blank cells**
 
   Select the table area (not including headers) and select Go To Special from the Find&Select options. Click Fill Color to highlight selected cells 
 
-  ![](/Users/maria/Library/Application Support/typora-user-images/image-20210926215537641.png)
+  ![](/images/image-20210926215537641.png)
 
-  ![](/Users/maria/Library/Application Support/typora-user-images/image-20210926215656596.png)
+  ![](/images/image-20210926215656596.png)
 
 #### Link: Filling empty cells using Go To Special 
 
@@ -218,7 +218,7 @@ To avoid messing up formula, use Smart Paste -> Values Only
 
 **Hint**: You can also subselect the TOTAL values only using Filter and then copy and paste a set of values as a range rigght into the `Summary` sheet
 
-![](/Users/maria/Library/Application Support/typora-user-images/image-20210927030923992.png)
+![](/images/image-20210927030923992.png)
 
 ## Summaries and Visuals
 
@@ -247,17 +247,17 @@ https://support.microsoft.com/en-us/office/analyze-data-in-excel-3223aab8-f543-4
 
 - [ ] **In the opened worksheet, in the pane on the right select fields `District Name`, `Test Takers` and `Total Score` . Do you think this numbers are correct?**
 
-  ![](/Users/maria/Library/Application Support/typora-user-images/image-20210927031947053.png)
+  ![](/images/image-20210927031947053.png)
 
 - [ ] ​	**Select `Group` field name and move it to the Filter area. In the filter above, unselect the "TOTAL" option.**
 
   Where to find a filter
 
-  ![](/Users/maria/Library/Application Support/typora-user-images/image-20210927032100033.png)
+  ![](/images/image-20210927032100033.png)
 
 - [ ]  **In the Values area, change the `Total Score` from Sum to the Average**
 
-  **Hint**: Click on the info symbol to change the aggregation function: ![image-20210927032238400](/Users/maria/Library/Application Support/typora-user-images/image-20210927032238400.png)
+  **Hint**: Click on the info symbol to change the aggregation function: ![image-20210927032238400](/images/image-20210927032238400.png)
 
 ### Visualizations
 
@@ -275,7 +275,7 @@ https://support.microsoft.com/en-us/office/analyze-data-in-excel-3223aab8-f543-4
 
   Advice: Horizontal bar chart is a prefered when having categories with long names
 
-  ![](/Users/maria/Library/Application Support/typora-user-images/image-20210927032731844.png)
+  ![](/images/image-20210927032731844.png)
 
 - [ ] **Sort bins by sorting the `Percent of Test Takers` column**
 

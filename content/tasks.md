@@ -6,9 +6,9 @@ nav_order: 1
 
 ---
 
-## Introduction
+# Introduction
 
-### Intro
+## Intro
 
 *Getting familiar with basic objects in Excel* 
 
@@ -27,7 +27,7 @@ Choose File -> New in the Excel menu or press Ctrl+N (Cmd+N on Mac)
 
 - [ ] Read more about difference between Workbook and Worksheet objects [SOURCE]
 
-### Data Types
+## Data Types
 
 *Switching between data types*
 
@@ -45,7 +45,7 @@ Most of the data is defined as a General type, unless specified otherwise. To le
 
   ![](images/image-20210926211001795.png)
 
-### Number as Dates
+## Number as Dates
 
 *How to avoid having numbers stored as dates*
 
@@ -57,11 +57,11 @@ Most of the data is defined as a General type, unless specified otherwise. To le
 
 - [ ] **Delete the value in the cell. Change the `Group-District Code`  column to be Text. Now. fill the first 5 values manually following the pattern (`1-20`, `2-20`,`3-20`, `4-20`,`TOTAL-20` ).**
 
-#### Link: Prevent Excel from changing numbers into dates 
+### Link: Prevent Excel from changing numbers into dates 
 
 https://academy.datawrapper.de/article/89-prevent-excel-from-changing-numbers-into-dates
 
-### Autofill
+## Autofill
 
 *How to fill values based on the pattern*
 
@@ -73,11 +73,11 @@ We now can fill the rest of the patern using Autofill option.
 
   ![](images/image-20210926212807828.png)
 
-#### Link: Microsoft guide on using autofill
+### Link: Microsoft guide on using autofill
 
 https://support.microsoft.com/en-us/office/copy-a-formula-by-dragging-the-fill-handle-in-excel-for-mac-dd928259-622b-473f-9a33-83aa1a63e218
 
-### Sorting
+## Sorting
 
 *Explore existing sorting options*
 
@@ -95,7 +95,7 @@ https://support.microsoft.com/en-us/office/copy-a-formula-by-dragging-the-fill-h
 
   ![](images/image-20210926213913533.png)
 
-### Filter 
+## Filter 
 
 *Removing errors using Filter*
 
@@ -115,11 +115,11 @@ https://support.microsoft.com/en-us/office/copy-a-formula-by-dragging-the-fill-h
 
   ![](images/image-20210926214706616.png)
 
-#### Link: 3 ways to remove empty rows
+### Link: 3 ways to remove empty rows
 
 https://www.ablebits.com/office-addins-blog/2013/10/01/remove-blank-rows-in-excel/ 
 
-### Find and Replace 
+## Find and Replace 
 
 *Working with missing or masked values*
 
@@ -143,13 +143,13 @@ https://www.ablebits.com/office-addins-blog/2013/10/01/remove-blank-rows-in-exce
 
   ![](images/image-20210926215656596.png)
 
-#### Link: Filling empty cells using Go To Special 
+### Link: Filling empty cells using Go To Special 
 
 https://spreadsheetplanet.com/fill-blank-cells-with-value-above-in-excel/ 
 
-## Formulas
+# Formulas
 
-### Intro to Formulas
+## Intro to Formulas
 
 *Using SUM, AVG, COUNT*
 
@@ -167,15 +167,15 @@ Answer: `SUM(E20:E49)`
 
 Answer: `AVG(G20:G49)`
 
-#### Link: Basic Excel Formulas
+### Link: Basic Excel Formulas
 
 https://corporatefinanceinstitute.com/resources/excel/study/basic-excel-formulas-beginners/
 
-#### Link: When to use absolute and relative references
+### Link: When to use absolute and relative references
 
 https://support.microsoft.com/en-us/office/switch-between-relative-absolute-and-mixed-references-dfec08cd-ae65-4f56-839e-5f0d8d0baca9
 
-### Logical Functions
+## Logical Functions
 
 *Calculate some metric if condition is true*
 
@@ -185,7 +185,7 @@ https://support.microsoft.com/en-us/office/switch-between-relative-absolute-and-
 
 Answer: `IF(C5="TOTAL",F5/E5,"")`
 
-### Conditional Summary
+## Conditional Summary
 
 *Using SUMIF and SUBTOTAL*
 
@@ -202,7 +202,7 @@ Answer: `SUMIF(Data!C5:C49,"TOTAL",Data!F5:F49)`
 
 Answer: `SUBTOTAL(1,Data!F5:F49)`
 
-### VLOOKUP
+## VLOOKUP
 
 - [ ] **Return to the `Summary` sheet;** 
 - [ ] **Use `VLOOKUP` to fill the rest of the summaries** 
@@ -211,7 +211,7 @@ Answer: `SUBTOTAL(1,Data!F5:F49)`
 
 Answer: `VLOOKUP(A9,Data!D5:E49,2,FALSE)`
 
-### Smart Paste
+## Smart Paste
 
 - [ ]  **Copy the `Percent of test takers` values from the `Data` sheet into the `Summary` sheet**
 
@@ -221,9 +221,9 @@ To avoid messing up formula, use Smart Paste -> Values Only
 
 ![](images/image-20210927030923992.png)
 
-## Summaries and Visuals
+# Summaries and Visuals
 
-### Quick Analysis
+## Quick Analysis
 
 *Using Analyze Data Tool*
 
@@ -234,11 +234,11 @@ NOTE: This option may not be avaliable in the older Excel versions or in the Off
 
 - [ ] **Explore various options and choose what you think is appropriate!**
 
-#### Link: More on the Analyze Data tool and how to make most out of it
+### Link: More on the Analyze Data tool and how to make most out of it
 
 https://support.microsoft.com/en-us/office/analyze-data-in-excel-3223aab8-f543-4fda-85ed-76bb0295ffc4
 
-### Pivot Table
+## Pivot Table
 
 *Creating a simple Pivot Table* 
 
@@ -260,7 +260,7 @@ https://support.microsoft.com/en-us/office/analyze-data-in-excel-3223aab8-f543-4
 
   **Hint**: Click on the info symbol to change the aggregation function: ![image-20210927032238400](images/image-20210927032238400.png)
 
-### Visualizations
+## Visualizations
 
 *How to make a simple visualization*
 
@@ -282,7 +282,7 @@ https://support.microsoft.com/en-us/office/analyze-data-in-excel-3223aab8-f543-4
 
   Sorting/filtering  the original data has a direct impact on the visualization
 
-#### Link: How-tos on plotting different graph types in Excel
+### Link: How-tos on plotting different graph types in Excel
 
 https://stephanieevergreen.com/how-to/
 

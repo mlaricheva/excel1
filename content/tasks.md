@@ -16,7 +16,7 @@ nav_order: 1
 
   Choose File -> New in the Excel menu or press Ctrl+N (Cmd+N on Mac)
 
-  ![image1](/images/image-20210926205209032.png)
+  ![](images/image-20210926205209032.png)
 
 - [ ] **Create new worksheet.**
 

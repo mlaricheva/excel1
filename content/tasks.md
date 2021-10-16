@@ -200,19 +200,31 @@ https://spreadsheetplanet.com/fill-blank-cells-with-value-above-in-excel/
 Step 1
 {: .label .label-step}
 **Count how many observations contain number of test takers**
-Answer: `COUNT(F20:F49)`
+<details>
+<summary>Answer (click to open)</summary>
+<br>
+`COUNT(F20:F49)`
+</details>
 {: .step}
 
 Step 2
 {: .label .label-step}
 **Calculate total sum of the `Number of Student` column**
-Answer: `SUM(E20:E49)`
+<details>
+<summary>Answer (click to open)</summary>
+<br>
+`SUM(E20:E49)`
+</details>
 {: .step}
 
 Step 3
 {: .label .label-step}
 **Find the average value of the `Score` column**
-Answer: `AVG(G20:G49)`
+<details>
+<summary>Answer (click to open)</summary>
+<br>
+`AVG(G20:G49)`
+</details>
 {: .step}
 
 ### Link: Basic Excel Formulas
@@ -234,8 +246,12 @@ Step 1
 
 Step 2
 {: .label .label-step}
-**Use IF to get the percent of test takers for the Total values only:**  
-Answer: `IF(C5="TOTAL",F5/E5,"")`
+**Use IF to get the percent of test takers for the Total values only:** 
+<details>
+<summary>Answer (click to open)</summary>
+<br>
+`IF(C5="TOTAL",F5/E5,"")`
+</details>
 {: .step}
 
 ## Conditional Summary
@@ -253,13 +269,21 @@ Step 2
 {: .label .label-step}
 **Get the total number of test takers using `SUMIF()`;**
 **Hint**:  Use "Data!" in front of the cell name (e.g. Data!C2) to reference a cell from the sheet named Data
-Answer: `SUMIF(Data!C5:C49,"TOTAL",Data!F5:F49)`
+<details>
+<summary>Answer (click to open)</summary>
+<br>
+`SUMIF(Data!C5:C49,"TOTAL",Data!F5:F49)`
+</details>
 {: .step}
 
 Step 3
 {: .label .label-step}
 **Get the total number of test takers in Burnaby and Coquitlam using `SUBTOTAL()`**
-Answer: `SUBTOTAL(1,Data!F5:F49)`
+<details>
+<summary>Answer (click to open)</summary>
+<br>
+`SUBTOTAL(1,Data!F5:F49)`
+</details>
 {: .step}
 
 ## VLOOKUP
@@ -273,7 +297,11 @@ Step 2
 {: .label .label-step}
 **Use `VLOOKUP` to fill the rest of the summaries** 
 **Hint**: If VLOOKUP does not provide the right numbers, make sure to set the last parameter to be FALSE to get the exact match
-Answer: `VLOOKUP(A9,Data!D5:E49,2,FALSE)`
+<details>
+<summary>Answer (click to open)</summary>
+<br>
+`VLOOKUP(A9,Data!D5:E49,2,FALSE)`
+</details>
 {: .step}
 
 ## Smart Paste

@@ -25,20 +25,20 @@ nav_order: 1
 
 Step 1
 {: .label .label-step}
-**Open new workbook**
-Choose File -> New in the Excel menu or press Ctrl+N (Cmd+N on Mac)
+Open new workbook.  
+Choose File -> New in the Excel menu or press Ctrl+N (Cmd+N on Mac)  
 ![](images/image-20210926205209032.png)
 {: .step}
 
 Step 2
 {: .label .label-step}
-**Create new worksheet.**
+Create new worksheet.  
 In the opened workbook click on a plus in the bottom panel on the left ![image-20210926205404343](images/image-20210926205404343.png)
 {: .step}
 
 Step 3
 {: .label .label-step}
-Read more about difference between Workbook and Worksheet objects [SOURCE]
+Read more about difference between Workbook and Worksheet objects   [SOURCE]
 {: .step}
 
 ## Data Types
@@ -51,18 +51,18 @@ Most of the data is defined as a General type, unless specified otherwise. To le
 
 Step 1
 {: .label .label-step}
-**What type is `Group` column?**
+What type is `Group` column?  
 {: .step}
 
 Step 2
 {: .label .label-step}
-**What type is `District Code` column?**
+What type is `District Code` column?
 {: .step}
 
 Step 3
 {: .label .label-step}
-**Change `District Code` column to be Text**. 
-Select values in `District Code` column (or select all the values in the column by clicking on the `A` in the column names pane) and then select **Text** instead of General
+Change `District Code` column to be Text.  
+Select values in `District Code` column (or select all the values in the column by clicking on the `A` in the column names pane) and then select **Text** instead of General  
 ![](images/image-20210926211001795.png)
 {: .step}
 
@@ -72,18 +72,18 @@ Select values in `District Code` column (or select all the values in the column 
 
 Step 1
 {: .label .label-step}
-**Try to put `1-20` in the first row of the `Group-District Code` column**
+Try to put `1-20` in the first row of the `Group-District Code` column  
 {: .step}
 
 Step 2
 {: .label .label-step}
-**Select filled cell (`D5`) and change type to be Text. Did it work?**
+Select filled cell (`D5`) and change type to be Text. Did it work?  
 Unfortunately, Excel does not allow to switch between dates and text after the transformation has been done. However, we may prevent the automatic switch to the date format by choosing the format of column.
 {: .step}
 
 Step 3
 {: .label .label-step}
-**Delete the value in the cell. Change the `Group-District Code`  column to be Text. Now. fill the first 5 values manually following the pattern (`1-20`, `2-20`,`3-20`, `4-20`,`TOTAL-20` ).**
+Delete the value in the cell. Change the `Group-District Code`  column to be Text. Now. fill the first 5 values manually following the pattern (`1-20`, `2-20`,`3-20`, `4-20`,`TOTAL-20` ).  
 {: .step}
 
 ### Link: Prevent Excel from changing numbers into dates 
@@ -100,7 +100,7 @@ We now can fill the rest of the patern using Autofill option.
 
 Step 1
 {: .label .label-step}
-**Select first 5 rows of `Group-District Code` column and drag the fill handle down**
+Select first 5 rows of `Group-District Code` column and drag the fill handle down  
 ![](images/image-20210926212807828.png)
 {: .step}
 
@@ -114,16 +114,16 @@ https://support.microsoft.com/en-us/office/copy-a-formula-by-dragging-the-fill-h
 
 Step 1
 {: .label .label-step}
-**Sort data by the total number of students (ascending order).**
-Select the `Number of Students` column header (cell `E4`) and click Sort A to Z in the Data menu tab.
-**Hint**: Applying Filter allows to use different sorting options as well
+Sort data by the total number of students (ascending order).  
+Select the `Number of Students` column header (cell `E4`) and click Sort A to Z in the Data menu tab.  
+**Hint**: Applying Filter allows to use different sorting options as well  
 ![](images/image-20210926213258804.png)
 {: .step}
 
 Step 2
 {: .label .label-step}
-**Add another level of sorting, `District Code`.** 
-Follow the previous step now for `District Code` column, or use Sort option in the Data menu to add several rules and change their hierarchies 
+Add another level of sorting, `District Code`.  
+Follow the previous step now for `District Code` column, or use Sort option in the Data menu to add several rules and change their hierarchies.  
 ![](images/image-20210926213913533.png)
 {: .step}
 
@@ -133,25 +133,25 @@ Follow the previous step now for `District Code` column, or use Sort option in t
 
 Step 1
 {: .label .label-step}
-**Apply Filter (located in the Data menu) to the `District Code` column;**
+Apply Filter (located in the Data menu) to the `District Code` column.   
 ![](images/image-20210926214341684.png)
 {: .step}
 
 Step 2
 {: .label .label-step}
-**Select rows with blank District Code;**
+Select rows with blank District Code  
 ![](images/image-20210926214441951.png)
 {: .step}
 
 Step 3
 {: .label .label-step}
-**Right click on selected rows and select option "Delete Rows"**;
+Right click on selected rows and select option "Delete Rows"  
 ![](images/image-20210926214539172.png)
 {: .step}
 
 Step 4
 {: .label .label-step}
-**Make sure you do not have any blanks left**
+Make sure you do not have any blanks left  
 ![](images/image-20210926214706616.png)
 {: .step}
 
@@ -165,21 +165,21 @@ https://www.ablebits.com/office-addins-blog/2013/10/01/remove-blank-rows-in-exce
 
 Step 1
 {: .label .label-step}
-**Use Replace to find all "Msk" entries** 
+Use Replace to find all "Msk" entries  
 In the Find&Select option of main menu select Replace option or click Ctrl+H (both for PC and Mac);
 ![](images/image-20210926214917173.png)
 {: .step}
 
 Step 2
 {: .label .label-step}
-**Replace "Msk" with blank.** 
+Replace "Msk" with blank.  
 Do not put anything in the Replace field, not even a space
 ![](images/image-20210926215139163.png)
 {: .step}
 
 Step 3
 {: .label .label-step}
-**Use Go-To-Special to highlight blank cells**
+Use Go-To-Special to highlight blank cells  
 Select the table area (not including headers) and select Go To Special from the Find&Select options. Click Fill Color to highlight selected cells 
 ![](images/image-20210926215537641.png)
 ![](images/image-20210926215656596.png)
@@ -199,7 +199,7 @@ https://spreadsheetplanet.com/fill-blank-cells-with-value-above-in-excel/
 
 Step 1
 {: .label .label-step}
-**Count how many observations contain number of test takers**
+Count how many observations contain number of test takers  
 <details>
 <summary>Answer (click to open)</summary>
 <br>
@@ -209,7 +209,7 @@ Step 1
 
 Step 2
 {: .label .label-step}
-**Calculate total sum of the `Number of Student` column**
+Calculate total sum of the `Number of Student` column  
 <details>
 <summary>Answer (click to open)</summary>
 <br>
@@ -219,7 +219,7 @@ Step 2
 
 Step 3
 {: .label .label-step}
-**Find the average value of the `Score` column**
+Find the average value of the `Score` column  
 <details>
 <summary>Answer (click to open)</summary>
 <br>
@@ -241,12 +241,12 @@ https://support.microsoft.com/en-us/office/switch-between-relative-absolute-and-
 
 Step 1
 {: .label .label-step}
-**Create a new column `Percent of Test Takers`**
+Create a new column `Percent of Test Takers`  
 {: .step}
 
 Step 2
 {: .label .label-step}
-**Use IF to get the percent of test takers for the Total values only:** 
+Use IF to get the percent of test takers for the Total values only:   
 <details>
 <summary>Answer (click to open)</summary>
 <br>
@@ -262,12 +262,12 @@ SUMIF is a conditional summary, which works identical to the SUM function when a
 
 Step 1
 {: .label .label-step}
-**Open `Summary` sheet;**
+Open `Summary` sheet  
 {: .step}
 
 Step 2
 {: .label .label-step}
-**Get the total number of test takers using `SUMIF()`;**
+Get the total number of test takers using `SUMIF()`;  
 **Hint**:  Use "Data!" in front of the cell name (e.g. Data!C2) to reference a cell from the sheet named Data
 <details>
 <summary>Answer (click to open)</summary>
@@ -278,7 +278,7 @@ Step 2
 
 Step 3
 {: .label .label-step}
-**Get the total number of test takers in Burnaby and Coquitlam using `SUBTOTAL()`**
+Get the total number of test takers in Burnaby and Coquitlam using `SUBTOTAL()`  
 <details>
 <summary>Answer (click to open)</summary>
 <br>
@@ -290,13 +290,13 @@ Step 3
 
 Step 1
 {: .label .label-step}
-**Return to the `Summary` sheet**
+Return to the `Summary` sheet  
 {: .step}
 
 Step 2
 {: .label .label-step}
-**Use `VLOOKUP` to fill the rest of the summaries** 
-**Hint**: If VLOOKUP does not provide the right numbers, make sure to set the last parameter to be FALSE to get the exact match
+Use `VLOOKUP` to fill the rest of the summaries  
+**Hint**: If VLOOKUP does not provide the right numbers, make sure to set the last parameter to be FALSE to get the exact match  
 <details>
 <summary>Answer (click to open)</summary>
 <br>
@@ -308,9 +308,9 @@ Step 2
 
 Step 1
 {: .label .label-step}
-**Copy the `Percent of test takers` values from the `Data` sheet into the `Summary` sheet**
-To avoid messing up formula, use Smart Paste -> Values Only
-**Hint**: You can also subselect the TOTAL values only using Filter and then copy and paste a set of values as a range rigght into the `Summary` sheet
+Copy the `Percent of test takers` values from the `Data` sheet into the `Summary` sheet.  
+To avoid messing up formula, use Smart Paste -> Values Only.  
+**Hint**: You can also subselect the TOTAL values only using Filter and then copy and paste a set of values as a range rigght into the `Summary` sheet.  
 ![](images/image-20210927030923992.png)
 {: .step}
 
@@ -324,17 +324,17 @@ NOTE: This option may not be avaliable in the older Excel versions or in the Off
 
 Step 1
 {: .label .label-step}
-**Return to the `Data` sheet** 
+Return to the `Data` sheet  
 {: .step}
 
 Step 2
 {: .label .label-step}
-**Select all your data and choose "Analyze Data" on the right**
+Select all your data and choose "Analyze Data" on the right  
 {: .step}
 
 Step 3
 {: .label .label-step}
-**Explore various options and choose what you think is appropriate!**
+Explore various options and choose what you think is appropriate!  
 {: .step}
 
 ### Link: More on the Analyze Data tool and how to make most out of it
@@ -347,30 +347,30 @@ https://support.microsoft.com/en-us/office/analyze-data-in-excel-3223aab8-f543-4
 
 Step 1
 {: .label .label-step}
-**Select `Pivot Table` from the Insert menu**
+Select `Pivot Table` from the Insert menu  
 {: .step}
 
 Step 2
 {: .label .label-step}
-**Select all columns in the table and choose to place the pivot table in the new worksheet**
+Select all columns in the table and choose to place the pivot table in the new worksheet  
 {: .step}
 
 Step 3
 {: .label .label-step}
-**In the opened worksheet, in the pane on the right select fields `District Name`, `Test Takers` and `Total Score` . Do you think this numbers are correct?**
+In the opened worksheet, in the pane on the right select fields `District Name`, `Test Takers` and `Total Score` . Do you think this numbers are correct?  
 ![](images/image-20210927031947053.png)
 {: .step}
 
 Step 4
 {: .label .label-step}
-**Select `Group` field name and move it to the Filter area. In the filter above, unselect the "TOTAL" option.**
-Where to find a filter
+Select `Group` field name and move it to the Filter area. In the filter above, unselect the "TOTAL" option.  
+Where to find a filter:
 ![](images/image-20210927032100033.png)
 {: .step}
 
 Step 5
 {: .label .label-step}
-**In the Values area, change the `Total Score` from Sum to the Average**
+In the Values area, change the `Total Score` from Sum to the Average  
 **Hint**: Click on the info symbol to change the aggregation function: ![image-20210927032238400](images/image-20210927032238400.png)
 {: .step}
 
@@ -380,31 +380,31 @@ Step 5
 
 Step 1
 {: .label .label-step}
-**Return to the `Data` sheet** 
+Return to the `Data` sheet   
 {: .step}
 
 Step 2
 {: .label .label-step}
-**Select only TOTAL rows using filters for `Group`**
+Select only TOTAL rows using filters for `Group`  
 {: .step}
 
 Step 3
 {: .label .label-step}
-**Select columns `District Name` and `Percent of Test Takers`** 
+Select columns `District Name` and `Percent of Test Takers`   
 **Hint**: Hold CTRL or CMD to select both columns;
 {: .step}
 
 Step 4
 {: .label .label-step}
-**In the Insert menu select 2D horizontal bar chart (Clustered Bar);**
-Advice: Horizontal bar chart is a prefered when having categories with long names
+In the Insert menu select 2D horizontal bar chart (Clustered Bar).  
+*Advice*: Horizontal bar chart is a preferred when having categories with long names  
 ![](images/image-20210927032731844.png)
 {: .step}
 
 Step 5
 {: .label .label-step}
-**Sort bins by sorting the `Percent of Test Takers` column**
-Sorting/filtering  the original data has a direct impact on the visualization
+Sort bins by sorting the `Percent of Test Takers` column.  
+Sorting/filtering  the original data has a direct impact on the visualization.  
 {: .step}
 
 ### Link: How-tos on plotting different graph types in Excel

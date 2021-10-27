@@ -20,20 +20,21 @@ nav_order: 1
 # Introduction
 
 ## Intro
-
+  
+  
 *Getting familiar with basic objects in Excel* 
 
 Step 1
 {: .label .label-step}
-Open new workbook.  
-Choose File -> New in the Excel menu or press Ctrl+N (Cmd+N on Mac)  
+1. Open new workbook.  
+2. Choose File -> New in the Excel menu or press Ctrl+N (Cmd+N on Mac)  
 ![](images/image-20210926205209032.png)
 {: .step}
 
 Step 2
 {: .label .label-step}
-Create new worksheet.  
-In the opened workbook click on a plus in the bottom panel on the left ![image-20210926205404343](images/image-20210926205404343.png)
+1. Create new worksheet.  
+2. In the opened workbook click on a plus in the bottom panel on the left ![image-20210926205404343](images/image-20210926205404343.png)
 {: .step}
 
 Step 3
@@ -42,13 +43,16 @@ Read more about difference between Workbook and Worksheet objects   [SOURCE]
 {: .step}
 
 ## Data Types
-
+  
+  
 *Switching between data types*
 
 Most of the data is defined as a General type, unless specified otherwise. To learn what type a specific column is, select the range of values and check the dropdown list value in the Home tab. 
-
+  
+  
 **Hint**: the default alignment used by Excel suggests the data type too: numbers are aligned to the right, while text is aligned to the left.
-
+  
+  
 Step 1
 {: .label .label-step}
 What type is `Group` column?  
@@ -77,8 +81,8 @@ Try to put `1-20` in the first row of the `Group-District Code` column
 
 Step 2
 {: .label .label-step}
-Select filled cell (`D5`) and change type to be Text. Did it work?  
-Unfortunately, Excel does not allow to switch between dates and text after the transformation has been done. However, we may prevent the automatic switch to the date format by choosing the format of column.
+1. Select filled cell (`D5`) and change type to be Text. Did it work?  
+2. Unfortunately, Excel does not allow to switch between dates and text after the transformation has been done. However, we may prevent the automatic switch to the date format by choosing the format of column.
 {: .step}
 
 Step 3
@@ -91,7 +95,8 @@ Delete the value in the cell. Change the `Group-District Code`  column to be Tex
 https://academy.datawrapper.de/article/89-prevent-excel-from-changing-numbers-into-dates
 
 ## Autofill
-
+  
+  
 *How to fill values based on the pattern*
 
 We now can fill the rest of the patern using Autofill option.
@@ -106,31 +111,35 @@ Select first 5 rows of `Group-District Code` column and drag the fill handle dow
 
 ### Link: Microsoft guide on using autofill
 
-https://support.microsoft.com/en-us/office/copy-a-formula-by-dragging-the-fill-handle-in-excel-for-mac-dd928259-622b-473f-9a33-83aa1a63e218
+<https://support.microsoft.com/en-us/office/copy-a-formula-by-dragging-the-fill-handle-in-excel-for-mac-dd928259-622b-473f-9a33-83aa1a63e218>
 
 ## Sorting
-
+  
+  
 *Explore existing sorting options*
 
 Step 1
 {: .label .label-step}
-Sort data by the total number of students (ascending order).  
-Select the `Number of Students` column header (cell `E4`) and click Sort A to Z in the Data menu tab.  
+1. Sort data by the total number of students (ascending order).  
+2. Select the `Number of Students` column header (cell `E4`) and click Sort A to Z in the Data menu tab.  
+  
 **Hint**: Applying Filter allows to use different sorting options as well  
 ![](images/image-20210926213258804.png)
 {: .step}
 
 Step 2
 {: .label .label-step}
-Add another level of sorting, `District Code`.  
-Follow the previous step now for `District Code` column, or use Sort option in the Data menu to add several rules and change their hierarchies.  
+1. Add another level of sorting, `District Code`.  
+2. Follow the previous step now for `District Code` column, or use Sort option in the Data menu to add several rules and change their hierarchies.  
 ![](images/image-20210926213913533.png)
 {: .step}
 
 ## Filter 
-
+  
+  
 *Removing errors using Filter*
-
+  
+  
 Step 1
 {: .label .label-step}
 Apply Filter (located in the Data menu) to the `District Code` column.   
@@ -157,46 +166,52 @@ Make sure you do not have any blanks left
 
 ### Link: 3 ways to remove empty rows
 
-https://www.ablebits.com/office-addins-blog/2013/10/01/remove-blank-rows-in-excel/ 
+<https://www.ablebits.com/office-addins-blog/2013/10/01/remove-blank-rows-in-excel/>
 
 ## Find and Replace 
-
+  
+  
 *Working with missing or masked values*
-
+  
+  
 Step 1
 {: .label .label-step}
-Use Replace to find all "Msk" entries  
-In the Find&Select option of main menu select Replace option or click Ctrl+H (both for PC and Mac);
+1. Use Replace to find all "Msk" entries  
+2. In the Find&Select option of main menu select Replace option or click Ctrl+H (both for PC and Mac);
 ![](images/image-20210926214917173.png)
 {: .step}
 
 Step 2
 {: .label .label-step}
-Replace "Msk" with blank.  
-Do not put anything in the Replace field, not even a space
+1. Replace "Msk" with blank.  
+2. Do not put anything in the Replace field, not even a space
 ![](images/image-20210926215139163.png)
 {: .step}
 
 Step 3
 {: .label .label-step}
-Use Go-To-Special to highlight blank cells  
-Select the table area (not including headers) and select Go To Special from the Find&Select options. Click Fill Color to highlight selected cells 
+1. Use Go-To-Special to highlight blank cells  
+2. Select the table area (not including headers) and select Go To Special from the Find&Select options. Click Fill Color to highlight selected cells 
 ![](images/image-20210926215537641.png)
 ![](images/image-20210926215656596.png)
 {: .step}
 
 ### Link: Filling empty cells using Go To Special 
 
-https://spreadsheetplanet.com/fill-blank-cells-with-value-above-in-excel/ 
+<https://spreadsheetplanet.com/fill-blank-cells-with-value-above-in-excel/>
 
 # Formulas
-
+  
+  
 ## Intro to Formulas
-
+  
+  
 *Using SUM, AVG, COUNT*
-
+  
+  
 **Hint**: instead of using the formulas directly, you can also see these metrics (count, avg, sum) in the bottom right corner of  the working area when selecting any range.
-
+  
+  
 Step 1
 {: .label .label-step}
 Count how many observations contain number of test takers  
@@ -229,16 +244,18 @@ Find the average value of the `Score` column
 
 ### Link: Basic Excel Formulas
 
-https://corporatefinanceinstitute.com/resources/excel/study/basic-excel-formulas-beginners/
+<https://corporatefinanceinstitute.com/resources/excel/study/basic-excel-formulas-beginners/>
 
 ### Link: When to use absolute and relative references
 
-https://support.microsoft.com/en-us/office/switch-between-relative-absolute-and-mixed-references-dfec08cd-ae65-4f56-839e-5f0d8d0baca9
+<https://support.microsoft.com/en-us/office/switch-between-relative-absolute-and-mixed-references-dfec08cd-ae65-4f56-839e-5f0d8d0baca9>
 
 ## Logical Functions
-
+  
+  
 *Calculate some metric if condition is true*
-
+  
+  
 Step 1
 {: .label .label-step}
 Create a new column `Percent of Test Takers`  
@@ -246,7 +263,9 @@ Create a new column `Percent of Test Takers`
 
 Step 2
 {: .label .label-step}
-Use IF to get the percent of test takers for the Total values only:   
+Use IF to get the percent of test takers for the Total values only:  
+  
+  
 <details>
 <summary>Answer (click to open)</summary>
 <br>
@@ -255,9 +274,11 @@ Use IF to get the percent of test takers for the Total values only:
 {: .step}
 
 ## Conditional Summary
-
+  
+  
 *Using SUMIF and SUBTOTAL*
-
+  
+  
 SUMIF is a conditional summary, which works identical to the SUM function when a certain condition is true. SUBTOTAL is used to calculate different aggregate functions (sum, avg, etc.). Use 1 as the first parameter to calculate average.
 
 Step 1
@@ -268,7 +289,9 @@ Open `Summary` sheet
 Step 2
 {: .label .label-step}
 Get the total number of test takers using `SUMIF()`;  
-**Hint**:  Use "Data!" in front of the cell name (e.g. Data!C2) to reference a cell from the sheet named Data
+
+**Hint**:  Use "Data!" in front of the cell name (e.g. Data!C2) to reference a cell from the sheet named Data.  
+
 <details>
 <summary>Answer (click to open)</summary>
 <br>
@@ -278,7 +301,8 @@ Get the total number of test takers using `SUMIF()`;
 
 Step 3
 {: .label .label-step}
-Get the total number of test takers in Burnaby and Coquitlam using `SUBTOTAL()`  
+Get the total number of test takers in Burnaby and Coquitlam using `SUBTOTAL()`   
+
 <details>
 <summary>Answer (click to open)</summary>
 <br>
@@ -287,7 +311,8 @@ Get the total number of test takers in Burnaby and Coquitlam using `SUBTOTAL()`
 {: .step}
 
 ## VLOOKUP
-
+  
+  
 Step 1
 {: .label .label-step}
 Return to the `Summary` sheet  
@@ -295,8 +320,10 @@ Return to the `Summary` sheet
 
 Step 2
 {: .label .label-step}
-Use `VLOOKUP` to fill the rest of the summaries  
-**Hint**: If VLOOKUP does not provide the right numbers, make sure to set the last parameter to be FALSE to get the exact match  
+Use `VLOOKUP` to fill the rest of the summaries. 
+
+**Hint**: If VLOOKUP does not provide the right numbers, make sure to set the last parameter to be FALSE to get the exact match. 
+
 <details>
 <summary>Answer (click to open)</summary>
 <br>
@@ -305,21 +332,27 @@ Use `VLOOKUP` to fill the rest of the summaries
 {: .step}
 
 ## Smart Paste
-
+  
+  
 Step 1
 {: .label .label-step}
-Copy the `Percent of test takers` values from the `Data` sheet into the `Summary` sheet.  
-To avoid messing up formula, use Smart Paste -> Values Only.  
+Copy the `Percent of test takers` values from the `Data` sheet into the `Summary` sheet. 
+
+To avoid messing up formula, use Smart Paste -> Values Only. 
+
 **Hint**: You can also subselect the TOTAL values only using Filter and then copy and paste a set of values as a range rigght into the `Summary` sheet.  
 ![](images/image-20210927030923992.png)
 {: .step}
 
 # Summaries and Visuals
-
+  
+  
 ## Quick Analysis
-
+  
+  
 *Using Analyze Data Tool*
-
+  
+  
 NOTE: This option may not be avaliable in the older Excel versions or in the Office 365.
 
 Step 1
@@ -339,12 +372,14 @@ Explore various options and choose what you think is appropriate!
 
 ### Link: More on the Analyze Data tool and how to make most out of it
 
-https://support.microsoft.com/en-us/office/analyze-data-in-excel-3223aab8-f543-4fda-85ed-76bb0295ffc4
+<https://support.microsoft.com/en-us/office/analyze-data-in-excel-3223aab8-f543-4fda-85ed-76bb0295ffc4>
 
 ## Pivot Table
-
+  
+  
 *Creating a simple Pivot Table* 
-
+  
+  
 Step 1
 {: .label .label-step}
 Select `Pivot Table` from the Insert menu  
@@ -363,21 +398,24 @@ In the opened worksheet, in the pane on the right select fields `District Name`,
 
 Step 4
 {: .label .label-step}
-Select `Group` field name and move it to the Filter area. In the filter above, unselect the "TOTAL" option.  
-Where to find a filter:
+1. Select `Group` field name and move it to the Filter area. In the filter above, unselect the "TOTAL" option.  
+2. Where to find a filter:
 ![](images/image-20210927032100033.png)
 {: .step}
 
 Step 5
 {: .label .label-step}
-In the Values area, change the `Total Score` from Sum to the Average  
+In the Values area, change the `Total Score` from Sum to the Average. 
+
 **Hint**: Click on the info symbol to change the aggregation function: ![image-20210927032238400](images/image-20210927032238400.png)
 {: .step}
 
 ## Visualizations
-
+  
+  
 *How to make a simple visualization*
-
+  
+  
 Step 1
 {: .label .label-step}
 Return to the `Data` sheet   
@@ -390,13 +428,15 @@ Select only TOTAL rows using filters for `Group`
 
 Step 3
 {: .label .label-step}
-Select columns `District Name` and `Percent of Test Takers`   
+Select columns `District Name` and `Percent of Test Takers`. 
+
 **Hint**: Hold CTRL or CMD to select both columns;
 {: .step}
 
 Step 4
 {: .label .label-step}
 In the Insert menu select 2D horizontal bar chart (Clustered Bar).  
+
 *Advice*: Horizontal bar chart is a preferred when having categories with long names  
 ![](images/image-20210927032731844.png)
 {: .step}
@@ -404,10 +444,11 @@ In the Insert menu select 2D horizontal bar chart (Clustered Bar).
 Step 5
 {: .label .label-step}
 Sort bins by sorting the `Percent of Test Takers` column.  
-Sorting/filtering  the original data has a direct impact on the visualization.  
+
+*Advice*: Sorting/filtering  the original data has a direct impact on the visualization.  
 {: .step}
 
 ### Link: How-tos on plotting different graph types in Excel
 
-https://stephanieevergreen.com/how-to/
+<https://stephanieevergreen.com/how-to/>
 

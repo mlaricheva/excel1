@@ -41,7 +41,7 @@ Excel Workbook:
 
 ### Communities
 [Excel Forum](https://www.excelforum.com/)
-[Microsoft Answers]([http://answers.microsoft.com/en-us/office/forum/excel?filter=answered&tab=question&status=al](http://answers.microsoft.com/en-us/office/forum/excel?filter=answered&tab=question&status=all))
+[Microsoft Answers](http://answers.microsoft.com/en-us/office/forum/excel?filter=answered&tab=question&status=all)
 [Reddit](https://www.reddit.com/r/excel/)
 
 ### Youtube

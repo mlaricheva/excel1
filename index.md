@@ -20,11 +20,11 @@ At the end of this workshop, you will be able to:
 ## Schedule
 
 | 0:00 | Welcome and using Zoom|
-| 0:10 | Basics: Excel objects and data types |
+| 0:10 | [Basics](https://ubc-library-rc.github.io/excel1/content/tasks.html#introduction): Excel objects and data types |
 | 0:20 | Filling, sorting and filtering | 
-| 0:30 | Formulas: basic, conditional |   
+| 0:30 | [Formulas](https://ubc-library-rc.github.io/excel1/content/tasks.html#formulas): basic, conditional |   
 | 0:45 | VLOOKUP() |
-| 1:05 | Summary and Visuals: Pivot Tables |
+| 1:05 | [Summary and Visuals](https://ubc-library-rc.github.io/excel1/content/tasks.html#summaries-and-visuals): Pivot Tables |
 | 1:15 | Visualizations |
 | 1:30 | Wrap-up and Discussion |
 

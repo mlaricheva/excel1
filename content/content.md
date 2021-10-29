@@ -31,7 +31,8 @@ Excel Workbook:
 [Vertex 42](https://www.vertex42.com/ExcelTemplates/) 
 
 ### Best practices
-ICAEW's [article](https://www.icaew.com/technical/technology/excel/twenty-principles) 
+ICAEW's [article](https://www.icaew.com/technical/technology/excel/twenty-principles)
+  
 A [guide](https://www.soa.org/news-and-publications/newsletters/compact/2015/march/com-2015-iss53/excel-spreadsheets-best-practices/ ) from Society of Actuaries 
 
 ### Common Errors
@@ -47,4 +48,5 @@ Hampshire college [Tutorial](https://www.hampshire.edu/it/excel-tips-for-mac-and
 
 ### Youtube
 [Excel is Fun](https://www.youtube.com/user/ExcelIsFun) 
+  
 [Sheet Sensei](https://www.youtube.com/c/SheetSensei/) 

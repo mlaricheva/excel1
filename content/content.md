@@ -8,7 +8,7 @@ has_children: true
 ## Content
 
 Excel Workbook:
-- [XLSX](https://github.com/ubc-library-rc/excel1/content/Excel_data.xlsx)
+- [XLSX](https://github.com/ubc-library-rc/excel1/raw/main/content/Excel_data.xlsx)
 
 ### Links:
 - [Data Description](./data-description.md)

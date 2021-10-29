@@ -90,7 +90,8 @@ Step 3
 Delete the value in the cell. Change the `Group-District Code`  column to be Text. Now. fill the first 5 values manually following the pattern (`1-20`, `2-20`,`3-20`, `4-20`,`TOTAL-20` ).  
 {: .step}
 
-### Link: [Prevent Excel from changing numbers into dates] (https://academy.datawrapper.de/article/89-prevent-excel-from-changing-numbers-into-dates)
+### Link: Prevent Excel from changing numbers into dates 
+[Datawrapper Academy](https://academy.datawrapper.de/article/89-prevent-excel-from-changing-numbers-into-dates)
 
 ## Autofill
   
@@ -107,7 +108,8 @@ Select first 5 rows of `Group-District Code` column and drag the fill handle dow
 ![](images/image-20210926212807828.png)
 {: .step}
 
-### Link: [Microsoft guide on using autofill] (https://support.microsoft.com/en-us/office/copy-a-formula-by-dragging-the-fill-handle-in-excel-for-mac-dd928259-622b-473f-9a33-83aa1a63e218)
+### Link: Microsoft guide on using autofill 
+[Microsoft Support](https://support.microsoft.com/en-us/office/copy-a-formula-by-dragging-the-fill-handle-in-excel-for-mac-dd928259-622b-473f-9a33-83aa1a63e218)
 
 ## Sorting
   
@@ -160,7 +162,8 @@ Make sure you do not have any blanks left
 ![](images/image-20210926214706616.png)
 {: .step}
 
-### Link: [3 ways to remove empty rows] (https://www.ablebits.com/office-addins-blog/2013/10/01/remove-blank-rows-in-excel/)
+### Link: 3 ways to remove empty rows 
+[Ablebits blog](https://www.ablebits.com/office-addins-blog/2013/10/01/remove-blank-rows-in-excel/)
 
 ## Find and Replace 
   
@@ -190,7 +193,8 @@ Step 3
 ![](images/image-20210926215656596.png)
 {: .step}
 
-### Link: [Filling empty cells using Go To Special] (https://spreadsheetplanet.com/fill-blank-cells-with-value-above-in-excel/)
+### Link: Filling empty cells using Go To Special 
+[Spreadsheet Planet's tutorial](https://spreadsheetplanet.com/fill-blank-cells-with-value-above-in-excel/)
 
 # Formulas
   
@@ -234,9 +238,11 @@ Find the average value of the `Score` column
 </details>
 {: .step}
 
-### Link: [Basic Excel Formulas] (https://corporatefinanceinstitute.com/resources/excel/study/basic-excel-formulas-beginners/)
+### Link: Basic Excel Formulas 
+[Corporate Finance Institute](https://corporatefinanceinstitute.com/resources/excel/study/basic-excel-formulas-beginners/)
 
-### Link: [When to use absolute and relative references] (https://support.microsoft.com/en-us/office/switch-between-relative-absolute-and-mixed-references-dfec08cd-ae65-4f56-839e-5f0d8d0baca9)
+### Link: When to use absolute and relative references 
+[Microsoft Support](https://support.microsoft.com/en-us/office/switch-between-relative-absolute-and-mixed-references-dfec08cd-ae65-4f56-839e-5f0d8d0baca9)
 
 ## Logical Functions
   
@@ -358,7 +364,8 @@ Step 3
 Explore various options and choose what you think is appropriate!  
 {: .step}
 
-### Link: [More on the Analyze Data tool and how to make most out of it] (https://support.microsoft.com/en-us/office/analyze-data-in-excel-3223aab8-f543-4fda-85ed-76bb0295ffc4)
+### Link: More on the Analyze Data tool and how to make most out of it 
+[Microsoft Support](https://support.microsoft.com/en-us/office/analyze-data-in-excel-3223aab8-f543-4fda-85ed-76bb0295ffc4)
 
 ## Pivot Table
   
@@ -434,5 +441,6 @@ Sort bins by sorting the `Percent of Test Takers` column.
 *Advice*: Sorting/filtering  the original data has a direct impact on the visualization.  
 {: .step}
 
-### Link: [How-tos on plotting different graph types in Excel] (https://stephanieevergreen.com/how-to/)
+### Link: How-tos on plotting different graph types in Excel 
+[EvergreenData's tutorials](https://stephanieevergreen.com/how-to/)
 

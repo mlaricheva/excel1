@@ -29,4 +29,4 @@ At the end of this workshop, you will be able to:
 | 1:30 | Wrap-up and Discussion |
 
 ## Resources
-* See [Content](https://github.com/ubc-library-rc/excel1/blob/main/content/content.md#resources)
+* See [Content](https://ubc-library-rc.github.io/excel1/content/content.html#resources)

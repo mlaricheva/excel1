@@ -8,7 +8,7 @@ nav_order: 1
 
 ## Data Description  
   
-### [Download Excel Workbook (xlsx)](https://github.com/ubc-library-rc/excel1/Excel_data.xlsx). 
+### [Download Excel Workbook (xlsx)](https://github.com/ubc-library-rc/excel1/raw/main/content/Excel_data.xlsx). 
    
    
 This data is artificial and prepared for the demonstrating purposes.  

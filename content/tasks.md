@@ -320,15 +320,16 @@ Return to the `Summary` sheet
 
 Step 2
 {: .label .label-step}
-Use `VLOOKUP` to fill the rest of the summaries. 
+Use `VLOOKUP` to fill the rest of the summaries. Use absolute reference ($) to search rows from 5 to 49.
 
 **Hint**: If VLOOKUP does not provide the right numbers, make sure to set the last parameter to be FALSE to get the exact match. 
 
 <details>
 <summary>Answer (click to open)</summary>
 <br>
-`VLOOKUP(A9,Data!D5:E49,2,FALSE)`
+`VLOOKUP(A9,Data!$D$5:$E$49,2,FALSE)`
 </details>
+
 {: .step}
 
 ## Smart Paste

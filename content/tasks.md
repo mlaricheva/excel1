@@ -501,6 +501,8 @@ It will create vertical line for the average, just like we wanted. Now, you can 
 
 {: .step}
 
+
+
 ## Saving your chart  
 
 *Save Visualization*  

@@ -408,7 +408,7 @@ In the Values area, change the `Total Score` from Sum to the Average.
 
 **Hint**: Click on the info symbol to change the aggregation function: 
 
-![](/Users/maria/Documents/GitHub/excel1/content/images/viz-1.png)
+![](images/viz-1.png)
 
 {: .step}
 
@@ -479,7 +479,7 @@ Step 3
 {: .label .label-step}
 Select Average as `Y-values`, Average column name as `Name`, and District Name column as `X-values`. You should have another set of bins added to your visualization;
 
-![](/Users/maria/Documents/GitHub/excel1/content/images/viz-2.png)
+![](images/viz-2.png)
 
 {: .step}
 
@@ -487,17 +487,17 @@ Step 4
 {: .label .label-step}
 Select series corresponding to average (click on the orange bins). You can Change Series Chart Type by clicking right button and selecting Combo. However, this option only supports vertical bar chart.  
 
-![](/Users/maria/Documents/GitHub/excel1/content/images/viz-3.png)
+![](images/viz-3.png)
 
-![](/Users/maria/Documents/GitHub/excel1/content/images/viz-4.png)
+![](images/viz-4.png)
 
 There are some workarounds available. For example, you can *add linear trend line* (select series, go to Chart Design) and click Add Chart Element -> Trend Line -> Linear (or right click and select Add Trendline)
 
-![](/Users/maria/Documents/GitHub/excel1/content/images/viz-5.png)
+![](images/viz-5.png)
 
 It will create vertical line for the average, just like we wanted. Now, you can *make your bins invisible*. Either in the Format menu or Format pane, select Fill -> No Fill and Border (or Shape Outline) -> No line.
 
-![](/Users/maria/Documents/GitHub/excel1/content/images/viz-6.png)
+![](images/viz-6.png)
 
 {: .step}
 

@@ -21,8 +21,8 @@ nav_order: 2
 # Introduction
 
 ## Intro
-  
-  
+
+
 *Getting familiar with basic objects in Excel* 
 
 Step 1
@@ -44,16 +44,16 @@ Read more about difference between Workbook and Worksheet objects   [SOURCE]
 {: .step}
 
 ## Data Types
-  
-  
+
+
 *Switching between data types*
 
 Most of the data is defined as a General type, unless specified otherwise. To learn what type a specific column is, select the range of values and check the dropdown list value in the Home tab. 
-  
-  
+
+
 **Hint**: the default alignment used by Excel suggests the data type too: numbers are aligned to the right, while text is aligned to the left.
-  
-  
+
+
 Step 1
 {: .label .label-step}
 What type is `Group` column?  
@@ -95,8 +95,8 @@ Delete the value in the cell. Change the `Group-District Code`  column to be Tex
 [Datawrapper Academy](https://academy.datawrapper.de/article/89-prevent-excel-from-changing-numbers-into-dates)
 
 ## Autofill
-  
-  
+
+
 *How to fill values based on the pattern*
 
 We now can fill the rest of the patern using Autofill option.
@@ -113,15 +113,15 @@ Select first 5 rows of `Group-District Code` column and drag the fill handle dow
 [Microsoft Support](https://support.microsoft.com/en-us/office/copy-a-formula-by-dragging-the-fill-handle-in-excel-for-mac-dd928259-622b-473f-9a33-83aa1a63e218)
 
 ## Sorting
-  
-  
+
+
 *Explore existing sorting options*
 
 Step 1
 {: .label .label-step}
 1. Sort data by the total number of students (ascending order).  
 2. Select the `Number of Students` column header (cell `E4`) and click Sort A to Z in the Data menu tab.  
-  
+
 **Hint**: Applying Filter allows to use different sorting options as well  
 ![](images/image-20210926213258804.png)
 {: .step}
@@ -134,11 +134,11 @@ Step 2
 {: .step}
 
 ## Filter 
-  
-  
+
+
 *Removing errors using Filter*
-  
-  
+
+
 Step 1
 {: .label .label-step}
 Apply Filter (located in the Data menu) to the `District Code` column.   
@@ -167,11 +167,11 @@ Make sure you do not have any blanks left
 [Ablebits blog](https://www.ablebits.com/office-addins-blog/2013/10/01/remove-blank-rows-in-excel/)
 
 ## Find and Replace 
-  
-  
+
+
 *Working with missing or masked values*
-  
-  
+
+
 Step 1
 {: .label .label-step}
 1. Use Replace to find all "Msk" entries  
@@ -198,25 +198,26 @@ Step 3
 [Spreadsheet Planet's tutorial](https://spreadsheetplanet.com/fill-blank-cells-with-value-above-in-excel/)
 
 # Formulas
-  
-  
+
+
 ## Intro to Formulas
-  
-  
+
+
 *Using SUM, AVG, COUNT*
-  
-  
+
+
 **Hint**: instead of using the formulas directly, you can also see these metrics (count, avg, sum) in the bottom right corner of  the working area when selecting any range.
-  
-  
+
+
 Step 1
 {: .label .label-step}
 Count how many observations contain number of test takers  
 <details>
 <summary>Answer (click to open)</summary>
 <br>
-`COUNT(F20:F49)`
+`COUNT(F5:F49)`
 </details>
+
 {: .step}
 
 Step 2
@@ -225,8 +226,9 @@ Calculate total sum of the `Number of Student` column
 <details>
 <summary>Answer (click to open)</summary>
 <br>
-`SUM(E20:E49)`
+`SUM(E5:E49)`
 </details>
+
 {: .step}
 
 Step 3
@@ -235,8 +237,9 @@ Find the average value of the `Score` column
 <details>
 <summary>Answer (click to open)</summary>
 <br>
-`AVG(G20:G49)`
+`AVG(G5:G49)`
 </details>
+
 {: .step}
 
 ### Link: Basic Excel Formulas 
@@ -246,11 +249,11 @@ Find the average value of the `Score` column
 [Microsoft Support](https://support.microsoft.com/en-us/office/switch-between-relative-absolute-and-mixed-references-dfec08cd-ae65-4f56-839e-5f0d8d0baca9)
 
 ## Logical Functions
-  
-  
+
+
 *Calculate some metric if condition is true*
-  
-  
+
+
 Step 1
 {: .label .label-step}
 Create a new column `Percent of Test Takers`  
@@ -259,8 +262,8 @@ Create a new column `Percent of Test Takers`
 Step 2
 {: .label .label-step}
 Use IF to get the percent of test takers for the Total values only:  
-  
-  
+
+
 <details>
 <summary>Answer (click to open)</summary>
 <br>
@@ -269,11 +272,11 @@ Use IF to get the percent of test takers for the Total values only:
 {: .step}
 
 ## Conditional Summary
-  
-  
+
+
 *Using SUMIF and SUBTOTAL*
-  
-  
+
+
 SUMIF is a conditional summary, which works identical to the SUM function when a certain condition is true. SUBTOTAL is used to calculate different aggregate functions (sum, avg, etc.). Use 1 as the first parameter to calculate average.
 
 Step 1
@@ -296,18 +299,20 @@ Get the total number of test takers using `SUMIF()`;
 
 Step 3
 {: .label .label-step}
-Get the total number of test takers in Burnaby and Coquitlam using `SUBTOTAL()`   
+Get the total number of test takers in Burnaby and Coquitlam using `SUBTOTAL()` .  
+
+**Hint:** Filter the table to select only rows related to these two districts.
 
 <details>
 <summary>Answer (click to open)</summary>
 <br>
-`SUBTOTAL(1,Data!F5:F49)`
+`SUBTOTAL(9,Data!F5:F49)`
 </details>
+
 {: .step}
 
 ## VLOOKUP
-  
-  
+
 Step 1
 {: .label .label-step}
 Return to the `Summary` sheet  
@@ -327,8 +332,8 @@ Use `VLOOKUP` to fill the rest of the summaries.
 {: .step}
 
 ## Smart Paste
-  
-  
+
+
 Step 1
 {: .label .label-step}
 Copy the `Percent of test takers` values from the `Data` sheet into the `Summary` sheet. 
@@ -340,14 +345,14 @@ To avoid messing up formula, use Smart Paste -> Values Only.
 {: .step}
 
 # Summaries and Visuals
-  
-  
+
+
 ## Quick Analysis
-  
-  
+
+
 *Using Analyze Data Tool*
-  
-  
+
+
 NOTE: This option may not be avaliable in the older Excel versions or in the Office 365.
 
 Step 1
@@ -369,11 +374,11 @@ Explore various options and choose what you think is appropriate!
 [Microsoft Support](https://support.microsoft.com/en-us/office/analyze-data-in-excel-3223aab8-f543-4fda-85ed-76bb0295ffc4)
 
 ## Pivot Table
-  
-  
+
+
 *Creating a simple Pivot Table* 
-  
-  
+
+
 Step 1
 {: .label .label-step}
 Select `Pivot Table` from the Insert menu  
@@ -401,15 +406,18 @@ Step 5
 {: .label .label-step}
 In the Values area, change the `Total Score` from Sum to the Average. 
 
-**Hint**: Click on the info symbol to change the aggregation function: ![image-20210927032238400](images/image-20210927032238400.png)
+**Hint**: Click on the info symbol to change the aggregation function: 
+
+![Screen Shot 2021-11-03 at 12.01.44 PM](/Users/maria/Documents/GitHub/excel1/content/images/Screen Shot 2021-11-03 at 12.01.44 PM.png)
+
 {: .step}
 
 ## Visualizations
-  
-  
+
+
 *How to make a simple visualization*
-  
-  
+
+
 Step 1
 {: .label .label-step}
 Return to the `Data` sheet   
@@ -444,4 +452,61 @@ Sort bins by sorting the `Percent of Test Takers` column.
 
 ### Link: How-tos on plotting different graph types in Excel 
 [EvergreenData's tutorials](https://stephanieevergreen.com/how-to/)
+
+## Data Series in Visualizatons
+
+
+*Adding average line*  
+
+Step 1
+{: .label .label-step}
+Create new column named `Average`. Use previously learned *SUBTOTAL* to get the average Percent of Test Takers and fill the whole column with this value
+
+<details>
+<summary>Answer (click to open)</summary>
+<br>
+`SUBTOTAL(1,H$9:H$49)`
+</details>
+{: .step}
+
+Step 2
+{: .label .label-step}
+Right click on the existing visualization, choose Select Data and add another series (in the Legend Series click on the plus button); 
+
+{: .step}
+
+Step 3
+{: .label .label-step}
+Select Average as `Y-values`, Average column name as `Name`, and District Name column as `X-values`. You should have another set of bins added to your visualization;
+
+![Screen Shot 2021-11-03 at 12.09.39 PM](/Users/maria/Documents/GitHub/excel1/content/images/Screen Shot 2021-11-03 at 12.09.39 PM.png)
+
+{: .step}
+
+Step 4
+{: .label .label-step}
+Select series corresponding to average (click on the orange bins). You can Change Series Chart Type by clicking right button and selecting Combo. However, this option only supports vertical bar chart.  
+
+![Screen Shot 2021-11-03 at 12.45.05 PM](/Users/maria/Documents/GitHub/excel1/content/images/Screen Shot 2021-11-03 at 12.45.05 PM.png)
+
+![Screen Shot 2021-11-03 at 12.44.47 PM](/Users/maria/Documents/GitHub/excel1/content/images/Screen Shot 2021-11-03 at 12.44.47 PM.png)
+
+There are some workarounds available. For example, you can *add linear trend line* (select series, go to Chart Design) and click Add Chart Element -> Trend Line -> Linear (or right click and select Add Trendline)
+
+![Screen Shot 2021-11-03 at 1.23.54 PM](/Users/maria/Documents/GitHub/excel1/content/images/Screen Shot 2021-11-03 at 1.23.54 PM.png)
+
+It will create vertical line for the average, just like we wanted. Now, you can *make your bins invisible*. Either in the Format menu or Format pane, select Fill -> No Fill and Border (or Shape Outline) -> No line.
+
+![Screen Shot 2021-11-03 at 1.25.00 PM](/Users/maria/Documents/GitHub/excel1/content/images/Screen Shot 2021-11-03 at 1.25.00 PM.png)
+
+{: .step}
+
+## Saving your chart  
+
+*Save Visualization*  
+
+Step 1
+{: .label .label-step}
+Select Chart Area (be careful not to select the Plot Area instead), right click and select Save as Picture to save your visualization
+{: .step}
 

@@ -1,4 +1,4 @@
-# Excel Intermediate (Part 1)
+# Working with data in Excel (Part 1)
 ### UBC Library Research Commons
 
 :heavy_exclamation_mark: This workshop is in development and not yet complete. :heavy_exclamation_mark:    

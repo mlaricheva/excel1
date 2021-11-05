@@ -40,7 +40,7 @@ Step 2
 
 Step 3
 {: .label .label-step}
-Read more about difference between Workbook and Worksheet objects   ![Geek Excel](https://geekexcel.com/difference-between-workbook-and-worksheet/)
+Read more about difference between Workbook and Worksheet objects   [Geek Excel](https://geekexcel.com/difference-between-workbook-and-worksheet/)
 {: .step}
 
 ## Data Types

@@ -1,4 +1,4 @@
-# Working with data in Excel (Part 1)
+# Working with data in Excel
 ### UBC Library Research Commons
  
 Link to workshop: https://ubc-library-rc.github.io/excel1/

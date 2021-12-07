@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tasks
-parent: Content
+parent: Part 1
 nav_order: 2
 
 

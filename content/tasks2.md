@@ -272,7 +272,7 @@ We can see that there are many zeros in our data. We can use logical formula to 
 Step 1
 {: .label .label-step}
 
-Select both Boys and Girls sheets. Create new column **Non-Zero Obs**. 
+Create new column **Non-Zero Obs**. 
 
 {: .step}
 
@@ -300,16 +300,45 @@ Drag the formula down. Ungroup the sheets and turn on the filter for the new col
 
 {: .step}
 
-Step 4
+### Sparklines
+
+Another useful tool in data exploration is sparklines. For our workshop, we will only apply sparklines on a small sample of data from the Girls sheet.
+
+Step 1
 {: .label .label-step}
 
-Switch over to Girls sheet, drag the formula down (with shortkey or manually) and apply the same filter.
+First, apply filter to the column names (Data -> Filter)
 
 {: .step}
 
-### Sparklines
+Step 2
+{: .label .label-step}
 
-Another useful tool in data exploration is 
+Apply a filter for the Total column. Choose option **Top 10**, change number to be 1 and select percent instead of items. You should have 26 items selected.
+
+![image-20211208155304815](images/image-20211208155304815.png)
+
+![image-20211208155343608](images/image-20211208155343608.png)
+
+{: .step}
+
+Step 3
+{: .label .label-step}
+
+Select data for individual years (not including column names) and in the *Insert* tab select Sparklines
+
+{: .step}
+
+Step 3
+{: .label .label-step}
+
+Select data for individual years (not including column names) and in the *Insert* tab select Sparklines -> Line and select an empty column to place sparklines to
+
+
+
+![image-20211208155556235](images/image-20211208155556235.png)
+
+{: .step}
 
 ## Statistical Tests and Formulas
 

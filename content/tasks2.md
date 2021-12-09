@@ -76,9 +76,9 @@ Rename the current sheet to "Boys" and follow the same procedure for the Girls d
 
 {: .step}
 
-## Data Operations
+# Data Operations
 
-### Combining sheets
+## Combining sheets
 
 *Working with two (or more) sheets simultaneously* 
 
@@ -137,7 +137,7 @@ Now switch over to the *Girls* sheet. The new column should appear there as well
 
 {: .step}
 
-### Index-Match
+## Index-Match
 
 For **Max Year** column, it can be interesting to see not the maximum value itself, but rather the year during which this maximum value was captured. This may be done using a combination of INDEX() and MATCH() formulas.
 
@@ -198,7 +198,7 @@ Drag the formula down to fill all the cells.
 
 {: .step}
 
-### Named Range
+## Named Range
 
 In the formula for the **Max Year** we have an absolute reference to lookup the column names ($B$1:$K$1), and a relative reference to the number of uses corresponding to each individual row (B2:K2). 
 
@@ -243,9 +243,9 @@ You can now rewrite the formula in the M2 using the *years* Named Range:
 </details>
 {: .step}
 
-## Data Exploration
+# Data Exploration
 
-### Conditional Formatting
+## Conditional Formatting
 
 What we want to do next, is to explore our data and see how many what values are generally met there. We can use Conditional Formatting to highlight cells with colors depending on their values:
 
@@ -267,7 +267,7 @@ Change the percent to be 1% and click OK.
 
 We can see that there are many zeros in our data. We can use logical formula to fix that and select only values that have 10 non-zero observations.
 
-### Logical Functions
+## Logical Functions
 
 Step 1
 {: .label .label-step}
@@ -300,7 +300,7 @@ Drag the formula down. Ungroup the sheets and turn on the filter for the new col
 
 {: .step}
 
-### Sparklines
+## Sparklines
 
 Another useful tool in data exploration is sparklines. For our workshop, we will only apply sparklines on a small sample of data from the Girls sheet.
 
@@ -332,7 +332,7 @@ Select data for individual years (not including column names) and in the *Insert
 Step 3
 {: .label .label-step}
 
-Select data for individual years (not including column names) and in the *Insert* tab select Sparklines -> Line and select an empty column to place sparklines to
+Select data for individual years (not including column names) and in the *Insert* tab select Sparklines -> Line and select an empty column to place sparklines to:
 
 
 
@@ -340,7 +340,7 @@ Select data for individual years (not including column names) and in the *Insert
 
 {: .step}
 
-## Statistical Tests and Formulas
+# Statistical Tests and Formulas
 
 Excel may not only be used for exploratory data analysis, but is also capable of performing a range of statistical tests. We are going to use our baby names data to test a couple of theories.
 
@@ -350,7 +350,7 @@ Here is the first names of famous Canadians in 2014 and 2015, extracted from the
 
 First, we are going to export this data and find the number of corresponding name uses in BC.
 
-### Data From Picture
+## Data From Picture
 
 There are some hiddens gems in Excel that not everyone is aware of. One of them is the ability to import the data from the picture (not only screenshots, but high-quality photos or scans).
 
@@ -384,7 +384,7 @@ If the Data from Picture returns an error, save your file and restart the applic
 
 {: .step}
 
-### XLOOKUP
+## XLOOKUP
 
 We will now break the data in two periods and compare the use of names. Each period would include 4 years to account for possible fluctuation. One way to get the data for the period would be to first use VLOOKUP() and get the data for each year, then sum it up and compare the summaries. However, there is a simplier way of doing it by using XLOOKUP that returns an array:
 
@@ -433,7 +433,7 @@ Write the formula for 2016-2019 period.
 
 {: .step}
 
-### T-test
+## T-test
 
 Suppose we have a following research question:
 
@@ -481,7 +481,7 @@ We can see that the two-tail p-value of 0.053 is slighly larger than our signifi
 
 {: .step}
 
-### ANOVA
+## ANOVA
 
 We have another column that has not been used yet -- *year*. What if we will rephrase our research question to be the following:
 

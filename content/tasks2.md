@@ -518,9 +518,9 @@ We can now see if there is a significant difference between periods, accounting 
 
 {: .step}
 
-## Pivot Tables and Visualizations
+# Pivot Tables and Visualizations
 
-### Wide to Long Format
+## Wide to Long Format
 
 For visualization and data analytics it is better to keep data in the long format (one row per subject). One way how the data can be transformed from wide format to the long is to use Power Query. However, this option is not supported in the latest versions for Mac or Office 365.  
 
@@ -604,7 +604,7 @@ Macro actually produces the code, that you can see by clicking Edit in the View 
 
 {: .step}
 
-### Creating a Pivot Table
+## Creating a Pivot Table
 
 The transformation of the wide format to long one is sometimes called "unpivoting" the table. However, the real pivot table format is useful in many other ways, expecially for visualizations. Therefore, we will now create a Pivot table from the Long Data.
 
@@ -631,7 +631,7 @@ Add `year` to the Rows area.
 
 You now have a table similiar to one that we were working with in the beggining, but the rows and columns are replaced. This setup would be used for the dashboard visualization in the next step.
 
-### Creating an interactive visualization
+## Creating an interactive visualization
 
 Step 1
 {: .label .label-step}
@@ -661,18 +661,41 @@ By selecting different years and names, you can now see how the use of names is 
 
 {: .step}
 
-### Changing the chart parameters
+## Changing the chart parameters
 
 Step 1
 {: .label .label-step}
 
-Add title to the graph
+Add title to the graph: On the Design tab select **Add Chart Element** -> Chart Title -> Above Chart
 
 {: .step}
 
 Step 2
 {: .label .label-step}
 
-..
+Change color palette: On the Design tab select **Change Colors**. Some Excel versions allow you to add your own color scheme (see [here](https://www.customguide.com/excel/excel-color-scheme) the instruction on how to do it)!
 
 {: .step}
+
+Step 3
+{: .label .label-step}
+
+Apply direct labeling to the chart:
+
+1. Select <u>the last point</u> of the Data Series 
+2. Click Add Chart Element -> Data Labels -> More Data Labels Options. 
+3. Select Series Name and unselect Value 
+
+![image-20211215142230052](images/image-20211215142230052.png)
+
+{: .step}
+
+Step 4
+{: .label .label-step}
+
+Change the gridlines: Select verital axis, right click on them (or choose Vertical (Value) Axis in the Format tab). Click on the histogram icon, change the maximum value to be 200 and major units to be 50 (to increase the spacing between gridlines)
+
+![image-20211215143638622](images/image-20211215143638622.png)
+
+{: .step}
+

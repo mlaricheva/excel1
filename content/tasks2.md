@@ -518,4 +518,161 @@ We can now see if there is a significant difference between periods, accounting 
 
 {: .step}
 
-### 
+## Pivot Tables and Visualizations
+
+### Wide to Long Format
+
+For visualization and data analytics it is better to keep data in the long format (one row per subject). One way how the data can be transformed from wide format to the long is to use Power Query. However, this option is not supported in the latest versions for Mac or Office 365.  
+
+In this workshop, we demonstrate how it may be done through the use of Macro.
+
+Step 1
+{: .label .label-step}
+
+Select Top-10 items from the Boys sheet using the filter.
+
+{: .step}
+
+Step 2
+{: .label .label-step}
+
+Create a new sheet called "Long Data" with three columns -- name, value and year.
+
+{: .step}
+
+Step 3
+{: .label .label-step}
+
+First, we will transform a data for one name. Excel allows a to transpose a row through the use of Paste of Special function. Copy the first row of data (including only the values for years from 2010 to 2019).   
+
+Switch to the Long Data sheet. Right-click on the first row of `value` column and select Paste Special -> Transpose.
+
+![image-20211215112859400](images/image-20211215112859400.png)
+
+{: .step}
+
+Step 4
+{: .label .label-step}
+
+Repeat the procedure with the years column names (cells B1-K1 of the Boys sheet) and put them in the `year` column.
+
+{: .step}
+
+Step 5
+{: .label .label-step}
+
+Now copy and paste the name from the Boys sheet to the Long Data sheet and fill the ten rows by dragging the cell down. You should have a following result for the first name:
+
+![image-20211215113328508](images/image-20211215113328508.png)
+
+{: .step}
+
+Step 6
+{: .label .label-step}
+
+The same procedure needs to be repeated 10 times. To make it faster, we can record the manual actions using the macro and then run it several times.   
+
+We are going to use macro with a relative references, so before starting, open the View tab and make sure that the **Use Relative References** option is on.
+
+It is also highly important to select correct cells before starting the recording. Select the next empty row in the Long Data sheet, then open the Boys sheet and select the next name (Daniel). Stay on the Boys sheet. In the View tab select **Record Macro** and give macro a name, for example, `add_name`. You would be able to see small stop button under the Sheet list. 
+
+{: .step}
+
+Step 7
+{: .label .label-step}
+
+<u>Since we use relative references, mostly keys would be used for transferring between cells</u>. Carefully repeat the following sequence of steps:
+
+1. Copy the previously selected name (by using Ctrl/Cmd + C or right-clicking on the cell and selecting Copy)
+2. Switch to the Long Data sheet. Paste the name and drag it down to 9 more cells. When finished, use right arrow to switch to the `value` column. 
+3. Open the Boys sheet again. Using the right arrow, switch to the B column and select the observations for years 2010-2019 (use Shift and Right Arrow to expand your selection)
+4. Switch to the Long Data sheet. Right-click on the selected cell and use Paste as Special to transform the data. When finished, use right key to switch to the `years` column.
+5. Select already filled years for the previous name (using you mouse or keys, does not matter here). Copy them and click down arrow key together with Ctrl (or Command) to return to an empty row. 
+6. Paste the years. When finished, again click right arrow + Ctrl (Cmd), right click again and then click left arrow twice to return to the next empty row of the `name` column. This action will allow the macro to be run several times without the user reselecting the right cell each times macro finishes.
+7. Return to the Boys sheet and click Stop Recording. 
+
+
+
+Try running your macro! Select a name (for example, Daniel), click **View Macros** on the View tab and see if it works
+
+{: .step}
+
+Step 8
+{: .label .label-step}
+
+Macro actually produces the code, that you can see by clicking Edit in the View Macros window. Excel uses VBA programming language, so if you have a tricky task you can find some custom macros online. Try our code if you macro does not work correctly (make sure the names are the same and all the right cells are selected!) [macro code](https://github.com/ubc-library-rc/excel1/raw/main/content/add_name.rtf)
+
+{: .step}
+
+### Creating a Pivot Table
+
+The transformation of the wide format to long one is sometimes called "unpivoting" the table. However, the real pivot table format is useful in many other ways, expecially for visualizations. Therefore, we will now create a Pivot table from the Long Data.
+
+Step 1
+{: .label .label-step}
+
+Select column A-C in the Long Data sheet and on the Insert tab choose Pivot Table. Add a pivot table to the new sheet.
+
+{: .step}
+
+Step 2
+{: .label .label-step}
+
+Add `name` to the Column area, and `value` to the Values area. The latter would be automatically converted to the Sum aggregation function. 
+
+{: .step}
+
+Step 3
+{: .label .label-step}
+
+Add `year` to the Rows area.  
+
+{: .step}
+
+You now have a table similiar to one that we were working with in the beggining, but the rows and columns are replaced. This setup would be used for the dashboard visualization in the next step.
+
+### Creating an interactive visualization
+
+Step 1
+{: .label .label-step}
+
+On the Insert tab select Pivot Chart. 
+
+{: .step}
+
+Step 2
+{: .label .label-step}
+
+Right-click the appeared chart and change the type to be line graph.
+
+{: .step}
+
+Step 3
+{: .label .label-step}
+
+On the PivotChart Analyze tab select Slicer. Choose `name` and `year`. 
+
+{: .step}
+
+Step 4
+{: .label .label-step}
+
+By selecting different years and names, you can now see how the use of names is changing over the years
+
+{: .step}
+
+### Changing the chart parameters
+
+Step 1
+{: .label .label-step}
+
+Add title to the graph
+
+{: .step}
+
+Step 2
+{: .label .label-step}
+
+..
+
+{: .step}

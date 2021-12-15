@@ -24,12 +24,12 @@ nav_order: 2
 
 *How to import .csv or .txt files into Excel*
 
-Make sure to extract both files from the downloaded archive prior to the data import!
+Make sure to extract both files from the downloaded archive before the data import!
 
 Step 1
 {: .label .label-step}
 
-Open new workbook.  
+Open a new workbook.  
 
 {: .step}
 
@@ -43,7 +43,7 @@ Choose File -> Import in the Excel menu
 Step 3
 {: .label .label-step}
 
-Select type **CSV file** and select the *bc-popular-boys-names.csv*
+Select the **CSV file** type and select the *bc-popular-boys-names.csv* file
 
 {: .step}
 
@@ -61,7 +61,7 @@ Step 5
 
 We are only planning to use the data from the last 10 years (2010-2019). Therefore, the columns for 1920-2009 can be skipped. 
 
-Click on the 1920 column and select **Do not import column**. Press Shift and scroll down to the column for 2009, click on it and click on **Do not import column** again. Make sure that only columns 1920-2009 are labeled as Skip. Other columns (Name, 2010, 2011, ..., 2019, Total) should be labeled General.
+Click on the 1920 column and select the **Do not import column**. Press Shift and scroll down to the column for 2009, click on it and click on the **Do not import column** again. Make sure that only columns 1920-2009 are labeled as Skip. Other columns (Name, 2010, 2011, ..., 2019, Total) should be labeled General.
 
   ![image-20211207001152333](images/image-20211207001152333.png)
 
@@ -82,14 +82,14 @@ Rename the current sheet to "Boys" and follow the same procedure for the Girls d
 
 *Working with two (or more) sheets simultaneously* 
 
-We now have two sheets with the same structure (Name, years 2010-2019 and Total) for boys and girls. 
+We now have two sheets with the same structure (Name, years 2010-2019, and Total) for boys and girls. 
 
 Suppose we want to add another column **Max Year** to store the maximum value in the period 2010-2019 for each name. If the sheets have the same structure, we can do it simultaneously: 
 
 Step 1
 {: .label .label-step}
 
-With *Boys* sheet open, press Shift and click on the *Girls* sheet. Make sure both sheets are selected:
+With the *Boys* sheet open, press Shift and click on the *Girls* sheet. Make sure both sheets are selected:
 
 ![image-20211207131253554](images/image-20211207131253554.png)
 
@@ -121,10 +121,11 @@ Step 4
 Drag the formula down until the last row. 
 
 <details>
-<summary>Easy way to drag formula down</summary>
+<summary>Easy way to drag the formula down</summary>
 <br>
 Double-click the bottom right of the cell (little square thingy that you usually drag down)
 </details>
+
 
 {: .step}
 
@@ -133,13 +134,13 @@ Step 5
 
 Now switch over to the *Girls* sheet. The new column should appear there as well.
 
-*Note*: Due to the difference in the number of rows, for *Girls* sheet formula is filled until the 2000th row. You can drag it down further manually or use shortcut from the previous step. 
+*Note*: Due to the difference in the number of rows, for *Girls* sheet formula is filled until the 2000th row. You can drag it down further manually or use a shortcut from the previous step. 
 
 {: .step}
 
 ## Index-Match
 
-For **Max Year** column, it can be interesting to see not the maximum value itself, but rather the year during which this maximum value was captured. This may be done using a combination of INDEX() and MATCH() formulas.
+For the **Max Year** column, it can be interesting to see not the maximum value itself, but rather the year during which this maximum value was captured. This may be done using a combination of INDEX() and MATCH() formulas.
 
 Step 1
 {: .label .label-step}
@@ -151,7 +152,7 @@ Select both sheets using Shift, similar to how we did it in the last exercise.
 Step 2
 {: .label .label-step}
 
-First, we need to find what column <u>matches</u> with the maximum value. To do that, we can use `MATCH()` function that has a following syntax:
+First, we need to find what column <u>matches</u> the maximum value. To do that, we can use the `MATCH()` function that has the following syntax:
 
 `=MATCH(lookup_value, lookup_array, [match_type])`
 
@@ -202,7 +203,7 @@ Drag the formula down to fill all the cells.
 
 In the formula for the **Max Year** we have an absolute reference to lookup the column names ($B$1:$K$1), and a relative reference to the number of uses corresponding to each individual row (B2:K2). 
 
-For the usuability and overall clarity (for example, if you are sharing your workbook with someone else who may wonder what the formula means), we can fix the absolute reference and give it a name, similiar to creating variables when programming.
+For the usability and overall clarity (for example, if you are sharing your workbook with someone else who may wonder what the formula means), we can fix the absolute reference and give it a name, similar to creating variables when programming.
 
 Step 1
 {: .label .label-step}
@@ -223,7 +224,7 @@ Enter a name for the data range, for example, *years*
 Step 3
 {: .label .label-step}
 
-Since we are working simultaneously with two sheets it is better for the Named Range to be independent from the sheet name. Therefore, you can specify the following range:
+Since we are working simultaneously with two sheets it is better for the Named Range to be independent of the sheet name. Therefore, you can specify the following range:
 
 `=$B$1:$K$1` (do not forget the equal sign in front)
 
@@ -247,7 +248,7 @@ You can now rewrite the formula in the M2 using the *years* Named Range:
 
 ## Conditional Formatting
 
-What we want to do next, is to explore our data and see how many what values are generally met there. We can use Conditional Formatting to highlight cells with colors depending on their values:
+What we want to do next, is to explore our data a bit and to estimate the range of values met there. We can use Conditional Formatting to highlight cells with colors depending on their values:
 
 Step 1
 {: .label .label-step}
@@ -265,21 +266,21 @@ Change the percent to be 1% and click OK.
 
 {: .step}
 
-We can see that there are many zeros in our data. We can use logical formula to fix that and select only values that have 10 non-zero observations.
+We can see that there are many zeros in our data. We can use a logical formula to fix that and select only values that have 10 non-zero observations.
 
 ## Logical Functions
 
 Step 1
 {: .label .label-step}
 
-Create new column **Non-Zero Obs**. 
+Create a new column **Non-Zero Obs**. 
 
 {: .step}
 
 Step 2
 {: .label .label-step}
 
-We will use `COUNTIF` to get the number of non-zero inputs for each row. The functions uses the following syntax:
+We will use `COUNTIF` to get the number of non-zero inputs for each row. The function uses the following syntax:
 
 `COUNTIF(range,criteria)`
 
@@ -307,14 +308,14 @@ Another useful tool in data exploration is sparklines. For our workshop, we will
 Step 1
 {: .label .label-step}
 
-First, apply filter to the column names (Data -> Filter)
+First, apply a filter to the column names (Data -> Filter)
 
 {: .step}
 
 Step 2
 {: .label .label-step}
 
-Apply a filter for the Total column. Choose option **Top 10**, change number to be 1 and select percent instead of items. You should have 26 items selected.
+Apply a filter for the Total column. Choose option **Top 10**, change number to be 1, and select percent instead of items. You should have 26 items selected.
 
 ![image-20211208155304815](images/image-20211208155304815.png)
 
@@ -342,17 +343,17 @@ Select data for individual years (not including column names) and in the *Insert
 
 # Statistical Tests and Formulas
 
-Excel may not only be used for exploratory data analysis, but is also capable of performing a range of statistical tests. We are going to use our baby names data to test a couple of theories.
+Excel may not only be used for exploratory data analysis but is also capable of performing a range of statistical tests. We are going to use our baby names data to test a couple of theories.
 
-Here is the first names of famous Canadians in 2014 and 2015, extracted from the [Google Trends](https://trends.google.com/trends/yis/2014/CA/):
+Here are the first names of famous Canadians in 2014 and 2015, extracted from [Google Trends](https://trends.google.com/trends/yis/2014/CA/):
 
 ![Screen Shot 2021-12-08 at 10.17.05 AM](images/Screen Shot 2021-12-08 at 10.17.05 AM.png)
 
-First, we are going to export this data and find the number of corresponding name uses in BC.
+First, we are going to export this data and find the numbers for corresponding names used in BC.
 
 ## Data From Picture
 
-There are some hiddens gems in Excel that not everyone is aware of. One of them is the ability to import the data from the picture (not only screenshots, but high-quality photos or scans).
+There are some hidden gems in Excel that not everyone is aware of. One of them is the ability to import the data from the picture (not only screenshots but high-quality photos or scans).
 
 Step 1
 {: .label .label-step}
@@ -371,7 +372,7 @@ In the *Data* tab, select **Data from Picture** -> Picture From File. Select the
 Step 3
 {: .label .label-step}
 
-When the upload is finished, Excel will give you an option to review the data. Since the data is a screenshot of another table, there is a little room for an error, so we can click on the Insert Data button.
+When the upload is finished, Excel will give you an option to review the data. Since the data is a screenshot of another table, there is little room for an error, so we can click on the Insert Data button.
 
 ![image-20211208112023591](images/image-20211208112023591.png)
 
@@ -380,18 +381,18 @@ When the upload is finished, Excel will give you an option to review the data. S
 Step 4
 {: .label .label-step}
 
-If the Data from Picture returns an error, save your file and restart the application. If you version of Excel does not support that feature, use prepared sheet from [here](https://github.com/ubc-library-rc/excel1/raw/main/content/trending_names.xlsx)
+If the Data from Picture returns an error, save your file and restart the application. If your version of Excel does not support that feature, use the prepared sheet from [here](https://github.com/ubc-library-rc/excel1/raw/main/content/trending_names.xlsx)
 
 {: .step}
 
 ## XLOOKUP
 
-We will now break the data in two periods and compare the use of names. Each period would include 4 years to account for possible fluctuation. One way to get the data for the period would be to first use VLOOKUP() and get the data for each year, then sum it up and compare the summaries. However, there is a simplier way of doing it by using XLOOKUP that returns an array:
+We will now break the data into two periods and compare the use of names. Each period would include 4 years to account for possible fluctuation. One way to get the data for the period would be to first use VLOOKUP() and get the data for each year, then sum it up and compare the summaries. However, there is a simpler way of doing it by using XLOOKUP that returns an array:
 
 Step 1
 {: .label .label-step}
 
-Add new column called 2010-2013. For the first name, use XLOOKUP() to get data for years 2010, 2011, 2012 and 2013.
+Add a new column called 2010-2013. For the first name, use XLOOKUP() to get data for the years 2010, 2011, 2012, and 2013.
 
 Here is the syntax that XLOOKUP uses:
 
@@ -410,7 +411,7 @@ Do not forget to use absolute and relative references where applicable!
 Step 2
 {: .label .label-step}
 
-Drag the formula down. You will now see that when the name we search for is present in the data, the formula returns 4 values -- one for each year. To sum them up, we can use SUM() function. 
+Drag the formula down. You will now see that when the name we search for is present in the data, the formula returns 4 values -- one for each year. To sum them up, we can use the SUM() function. 
 
 <details>
 <summary>Your formula should now look like this (click to open): </summary>
@@ -423,7 +424,7 @@ Drag the formula down. You will now see that when the name we search for is pres
 Step 3
 {: .label .label-step}
 
-Write the formula for 2016-2019 period.
+Write the formula for the 2016-2019 period.
 
 <details>
 <summary>Your formula should now look like this (click to open): </summary>
@@ -435,11 +436,11 @@ Write the formula for 2016-2019 period.
 
 ## T-test
 
-Suppose we have a following research question:
+Suppose we have the following research question:
 
 > Was there a difference between the use of trending names in two time periods?
 
-To answer that, we can use a t-test. The research question itself suggests that we have a repetition: two observations for each name. Therefore, we would use a **paired t-test**.
+To answer that, we can use a t-test. The research question itself suggests that we have repetition: two observations for each name. Therefore, we would use a **paired t-test**.
 
 Step 1
 {: .label .label-step}
@@ -462,7 +463,7 @@ Click on the Data Analysis (the icon should appear next to the Analysis Tool in 
 Step 3
 {: .label .label-step}
 
-Select column values as variables and save output on the same sheet, below the table. Other parameters would be defaults: null hypothesis is that the difference is 0 and the alpha level is 0.05.
+Select column values as variables and save output on the same sheet, below the table. Other parameters would be defaults: the null hypothesis is that the difference is 0 and the alpha level is 0.05.
 
 <details>
 <summary>Show settings (click to open): </summary>
@@ -475,9 +476,9 @@ Select column values as variables and save output on the same sheet, below the t
 Step 4
 {: .label .label-step}
 
-You are now able to see and analyze the output. T-tests in Excel perform both one-tail and two-tail options, however, the latter is generally preffered for the most cases. 
+You are now able to see and analyze the output. T-tests in Excel perform both one-tail and two-tail options, however, the latter is generally preferred for  most cases. 
 
-We can see that the two-tail p-value of 0.053 is slighly larger than our significance level, therefore, we cannot reject the null hypothesis and reach a conclusion based on that data.
+We can see that the two-tail p-value of 0.053 is slightly larger than our significance level, therefore, we cannot reject the null hypothesis and reach a conclusion based on that data.
 
 {: .step}
 
@@ -536,16 +537,16 @@ Select Top-10 items from the Boys sheet using the filter.
 Step 2
 {: .label .label-step}
 
-Create a new sheet called "Long Data" with three columns -- name, value and year.
+Create a new sheet called "Long Data" with three columns -- name, value, and year.
 
 {: .step}
 
 Step 3
 {: .label .label-step}
 
-First, we will transform a data for one name. Excel allows a to transpose a row through the use of Paste of Special function. Copy the first row of data (including only the values for years from 2010 to 2019).   
+First, we will transform observations for one name. Excel allows a to transpose a row through the use of Paste of Special function. Copy the first row of data (including only the values for years from 2010 to 2019).   
 
-Switch to the Long Data sheet. Right-click on the first row of `value` column and select Paste Special -> Transpose.
+Switch to the Long Data sheet. Right-click on the first row of the `value` column and select Paste Special -> Transpose.
 
 ![image-20211215112859400](images/image-20211215112859400.png)
 
@@ -561,7 +562,7 @@ Repeat the procedure with the years column names (cells B1-K1 of the Boys sheet)
 Step 5
 {: .label .label-step}
 
-Now copy and paste the name from the Boys sheet to the Long Data sheet and fill the ten rows by dragging the cell down. You should have a following result for the first name:
+Now copy and paste the name from the Boys sheet to the Long Data sheet and fill the ten rows by dragging the cell down. You should have the following result for the first name:
 
 ![image-20211215113328508](images/image-20211215113328508.png)
 
@@ -572,9 +573,9 @@ Step 6
 
 The same procedure needs to be repeated 10 times. To make it faster, we can record the manual actions using the macro and then run it several times.   
 
-We are going to use macro with a relative references, so before starting, open the View tab and make sure that the **Use Relative References** option is on.
+We are going to use a macro with relative references, so before starting, open the View tab and make sure that the **Use Relative References** option is on.
 
-It is also highly important to select correct cells before starting the recording. Select the next empty row in the Long Data sheet, then open the Boys sheet and select the next name (Daniel). Stay on the Boys sheet. In the View tab select **Record Macro** and give macro a name, for example, `add_name`. You would be able to see small stop button under the Sheet list. 
+It is also highly important to select correct cells before starting the recording. Select the next empty row in the Long Data sheet, then open the Boys sheet and select the next name (Daniel). Stay on the Boys sheet. In the View tab select **Record Macro** and give the macro a name, for example, `add_name`. You would be able to see a small stop button under the Sheet list. 
 
 {: .step}
 
@@ -584,29 +585,29 @@ Step 7
 <u>Since we use relative references, mostly keys would be used for transferring between cells</u>. Carefully repeat the following sequence of steps:
 
 1. Copy the previously selected name (by using Ctrl/Cmd + C or right-clicking on the cell and selecting Copy)
-2. Switch to the Long Data sheet. Paste the name and drag it down to 9 more cells. When finished, use right arrow to switch to the `value` column. 
-3. Open the Boys sheet again. Using the right arrow, switch to the B column and select the observations for years 2010-2019 (use Shift and Right Arrow to expand your selection)
-4. Switch to the Long Data sheet. Right-click on the selected cell and use Paste as Special to transform the data. When finished, use right key to switch to the `years` column.
-5. Select already filled years for the previous name (using you mouse or keys, does not matter here). Copy them and click down arrow key together with Ctrl (or Command) to return to an empty row. 
-6. Paste the years. When finished, again click right arrow + Ctrl (Cmd), right click again and then click left arrow twice to return to the next empty row of the `name` column. This action will allow the macro to be run several times without the user reselecting the right cell each times macro finishes.
+2. Switch to the Long Data sheet. Paste the name and drag it down to 9 more cells. When finished, use the right arrow (→) to switch to the `value` column. 
+3. Open the Boys sheet again. Using the right arrow (→), switch to the B column and select the observations for years 2010-2019 (use Shift and Right Arrow to expand your selection)
+4. Switch to the Long Data sheet. Right-click on the selected cell and use Paste as Special to transform the data. When finished, use the right arrow key (→) to switch to the `years` column.
+5. Select already filled years for the previous name (using your mouse or keys, does not matter here). Copy them and click the down arrow key (↓) together with Ctrl (or Command) to return to an empty row. 
+6. Paste the years. When finished, click the down arrow (↓) + Ctrl (Cmd), the down arrow (↓)  again and then click the left arrow (←) twice to return to the next empty row of the `name` column. This action will allow the macro to be run several times without the user reselecting the next empty row each time the macro finishes.
 7. Return to the Boys sheet and click Stop Recording. 
 
 
 
-Try running your macro! Select a name (for example, Daniel), click **View Macros** on the View tab and see if it works
+Try running your macro! Select a name (for example, Daniel), click **View Macros** on the View tab, and see if it works
 
 {: .step}
 
 Step 8
 {: .label .label-step}
 
-Macro actually produces the code, that you can see by clicking Edit in the View Macros window. Excel uses VBA programming language, so if you have a tricky task you can find some custom macros online. Try our code if you macro does not work correctly (make sure the names are the same and all the right cells are selected!) [macro code](https://github.com/ubc-library-rc/excel1/raw/main/content/add_name.rtf)
+Macro produces the code, that you can see by clicking Edit in the View Macros window. Excel uses VBA programming language, so if you have a tricky task you can find some custom macros online. Try our code if your macro does not work correctly (make sure the names are the same and all the right cells are selected!) [Click here to get macro code from the Github](https://github.com/ubc-library-rc/excel1/raw/main/content/add_name.rtf)
 
 {: .step}
 
 ## Creating a Pivot Table
 
-The transformation of the wide format to long one is sometimes called "unpivoting" the table. However, the real pivot table format is useful in many other ways, expecially for visualizations. Therefore, we will now create a Pivot table from the Long Data.
+The transformation of the wide format to a long one is sometimes called "unpivoting" the table. However, the real pivot table format is useful in many other ways, especially for visualizations. Therefore, we will now create a Pivot table from the Long Data.
 
 Step 1
 {: .label .label-step}
@@ -629,7 +630,7 @@ Add `year` to the Rows area.
 
 {: .step}
 
-You now have a table similiar to one that we were working with in the beggining, but the rows and columns are replaced. This setup would be used for the dashboard visualization in the next step.
+You now have a table similar to the one that we were working with in the beginning, but the rows and columns are replaced. This setup would be used for the dashboard visualization in the next step.
 
 ## Creating an interactive visualization
 
@@ -643,7 +644,7 @@ On the Insert tab select Pivot Chart.
 Step 2
 {: .label .label-step}
 
-Right-click the appeared chart and change the type to be line graph.
+Right-click the appeared chart and change the type to be a **line graph**.
 
 {: .step}
 
@@ -666,7 +667,7 @@ By selecting different years and names, you can now see how the use of names is 
 Step 1
 {: .label .label-step}
 
-Add title to the graph: On the Design tab select **Add Chart Element** -> Chart Title -> Above Chart
+Add the title to the graph: On the Design tab select **Add Chart Element** -> Chart Title -> Above Chart
 
 {: .step}
 
@@ -693,7 +694,7 @@ Apply direct labeling to the chart:
 Step 4
 {: .label .label-step}
 
-Change the gridlines: Select verital axis, right click on them (or choose Vertical (Value) Axis in the Format tab). Click on the histogram icon, change the maximum value to be 200 and major units to be 50 (to increase the spacing between gridlines)
+Change the gridlines: Select vertical axis, right-click on them (or choose Vertical (Value) Axis in the Format tab). Click on the histogram icon, change the maximum value to be 200 and major units to be 50 (to increase the spacing between grid lines)
 
 ![image-20211215143638622](images/image-20211215143638622.png)
 

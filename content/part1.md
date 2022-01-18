@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Part 1 
-nav_order: 5
+nav_order: 4
 has_children: true
 ---
 
@@ -37,8 +37,9 @@ Excel Workbook:
 - [XLSX](https://github.com/ubc-library-rc/excel1/raw/main/content/Excel_data.xlsx)
 
 ### Links:
-- [Data Description](./data-description.md)
-- [Tasks](./tasks.md)
+- [Data Description](https://ubc-library-rc.github.io/excel1/content/data-description1.html)
+- [Tasks](https://ubc-library-rc.github.io/excel1/content/tasks1.html)
   - [Introduction](https://ubc-library-rc.github.io/excel1/content/tasks.html#introduction)
   - [Formulas](https://ubc-library-rc.github.io/excel1/content/tasks.html#formulas)
-  - [Summaries and Visuals](https://ubc-library-rc.github.io/excel1/content/tasks.html#summaries-and-visuals). 
+  - [Summaries and Visuals](https://ubc-library-rc.github.io/excel1/content/tasks.html#summaries-and-visuals) 
+

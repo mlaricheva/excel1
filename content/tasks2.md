@@ -84,12 +84,10 @@ Continue to work on the *Boys* sheet. Add a name for the new column, for example
 
 Step 3
 {: .label .label-step}
-Add formula to the second cell to select the maximum over the ten years period.
-<details>
+Add formula to the second cell to select the maximum over the ten years period.<details>
 <summary>Formula (click to open)</summary>
 <br>
-`=MAX(B2:K2)`
-</details>
+`=MAX(B2:K2)`</details>
 {: .step}
 
 Step 4

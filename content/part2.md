@@ -13,9 +13,11 @@ This is the second part of the Excel workshop series. It is designed for interme
 
 ### [Microsoft 365 Office for UBC students](https://it.ubc.ca/services/desktop-print-services/software-licensing/microsoft-365-office-students)
 
+
+
 The first part of workshop series is recommended for people who are unsure about their Excel abilities: 
 
-#### [Part 1 of the Excel series](https://ubc-library-rc.github.io/excel1/content/part1.html)
+### [Part 1 of the Excel series](https://ubc-library-rc.github.io/excel1/content/part1.html)
 
 ## Learning objectives
 

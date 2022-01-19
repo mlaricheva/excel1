@@ -21,21 +21,21 @@ This is a second part of the Excel workshop series.
 
 At the end of this workshop, you will be able to:
 
-1. 
-2. 
-3. 
+1. Work with non-standart data types (csv, data from images), several sheets and large datasets in Excel;
+2. Use Excel's capabilities for data cleaning and exploratory analysis;
+3. Perform statistical tests (ANOVA and t-test), summarise and visualize your results
 
 ## Schedule
 
 | 0:00 | Welcome and using Zoom|
-| 0:10 | [Basics](https://ubc-library-rc.github.io/excel1/content/tasks.html#introduction): Excel objects and data types |
-| 0:20 | Filling, sorting and filtering | 
-| 0:30 | [Formulas](https://ubc-library-rc.github.io/excel1/content/tasks.html#formulas): basic, conditional |   
-| 0:45 | VLOOKUP() |
-| 1:00 | Break |
-| 1:05 | [Summary and Visuals](https://ubc-library-rc.github.io/excel1/content/tasks.html#summaries-and-visuals): Pivot Tables |
-| 1:15 | Visualizations |
-| 1:30 | Wrap-up and Discussion |
+| 0:10 | [Introduction](https://ubc-library-rc.github.io/excel1/content/tasks.html#introduction): Importing csv into Excel |
+| 0:15 | Working with multiple sheets and cell ranges | 
+| 0:20 | [Data Exploration](https://ubc-library-rc.github.io/excel1/content/tasks2.html#data-exploration) Conditional formatting, sparklines|   
+| 0:45 | Data from the picture, VLOOKUP and XLOOKUP |
+| 0:50 | Break |
+| 0:55 | [Statistical Tests and Formulas](https://ubc-library-rc.github.io/excel1/content/tasks2.html#t-test): t-test and ANOVA|
+| 1:10 | Pivot table and dynamic visualizations |
+| 1:25 | Wrap-up and Discussion |
 
 ## Links:
 

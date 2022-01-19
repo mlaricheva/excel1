@@ -28,52 +28,38 @@ Make sure to extract both files from the downloaded archive before the data impo
 
 Step 1
 {: .label .label-step}
-
 Open a new workbook.  
-
 {: .step}
 
 Step 2
 {: .label .label-step}
-
 Choose File -> Import in the Excel menu
-
 {: .step}
 
 Step 3
 {: .label .label-step}
-
 Select the **CSV file** type and select the *bc-popular-boys-names.csv* file
-
 {: .step}
 
 Step 4
 {: .label .label-step}
-
 In the Text Wizard select Delimited and choose Semicolon as the delimiter. Make sure that the preview looks correct
-
-  ![image-20211207000421068](images/image-20211207000421068.png)
-
+![image-20211207000421068](images/image-20211207000421068.png)
 {: .step}
 
 Step 5
 {: .label .label-step}
-
 We are only planning to use the data from the last 10 years (2010-2019). Therefore, the columns for 1920-2009 can be skipped. 
 
 Click on the 1920 column and select the **Do not import column**. Press Shift and scroll down to the column for 2009, click on it and click on the **Do not import column** again. Make sure that only columns 1920-2009 are labeled as Skip. Other columns (Name, 2010, 2011, ..., 2019, Total) should be labeled General.
+![image-20211207001152333](images/image-20211207001152333.png)
 
-  ![image-20211207001152333](images/image-20211207001152333.png)
-
-  ![image-20211207001346050](images/image-20211207001346050.png)
-
+![image-20211207001346050](images/image-20211207001346050.png)
 {: .step}
 
 Step 6
 {: .label .label-step}
-
 Rename the current sheet to "Boys" and follow the same procedure for the Girls data (file *bc-popular-girls-names.csv*) 
-
 {: .step}
 
 # Data Operations

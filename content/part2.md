@@ -7,15 +7,15 @@ has_children: true
 
 # Part 2 
 
-This is a second part of the Excel workshop series.
-
-*This session is designed for users who previously had some experience with Excel and covers a range of skills from basic to intermediate levels. We will introduce basic Excel objects, data types and functions; show how to use formulas to describe sample data; walk through the process of preparing a data visualization and a simple pivot table.*
+This is the second part of the Excel workshop series. It is designed for intermediate users who feel comfortable with basic Excel commands (sorting, filtering, absolute and relative references, basic visualizations), but participants of all skill levels are welcomed. We will walk you through the process of importing, cleaning, and exploring a large dataset, while demonstrating some of the less known Excel's capabilities, including OCR, macros, statistical analysis tool pack, and many other time-saving features.
 
 ### [Download data (.zip)](https://github.com/ubc-library-rc/excel1/raw/main/content/data.zip)
 
 ### [Microsoft 365 Office for UBC students](https://it.ubc.ca/services/desktop-print-services/software-licensing/microsoft-365-office-students)
 
-### [Part 1 of the Excel series](https://ubc-library-rc.github.io/excel1/content/part1.html)
+The first part of workshop series is recommended for people who are unsure about their Excel abilities: 
+
+#### [Part 1 of the Excel series](https://ubc-library-rc.github.io/excel1/content/part1.html)
 
 ## Learning objectives
 

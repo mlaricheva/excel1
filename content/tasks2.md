@@ -290,7 +290,7 @@ When the upload is finished, Excel will give you an option to review the data. S
 
 Step 4
 {: .label .label-step}
-If the Data from Picture returns an error, save your file and restart the application. If your version of Excel does not support that feature, use the prepared sheet from [here](https://github.com/ubc-library-rc/excel1/raw/main/content/trending_names.xlsx)
+If the Data from Picture returns an error, save your file and restart the application. If your version of Excel does not support that feature, use the prepared sheet from [here](https://github.com/ubc-library-rc/excel/raw/main/content/trending_names.xlsx)
 {: .step}
 
 ## XLOOKUP
@@ -453,7 +453,7 @@ Try running your macro! Select a name (for example, Daniel), click **View Macros
 
 Step 8
 {: .label .label-step}
-Macro produces the code, that you can see by clicking Edit in the View Macros window. Excel uses VBA programming language, so if you have a tricky task you can find some custom macros online. Try our code if your macro does not work correctly (make sure the names are the same and all the right cells are selected!) [Click here to get macro code from the Github](https://github.com/ubc-library-rc/excel1/raw/main/content/add_name.rtf)
+Macro produces the code, that you can see by clicking Edit in the View Macros window. Excel uses VBA programming language, so if you have a tricky task you can find some custom macros online. Try our code if your macro does not work correctly (make sure the names are the same and all the right cells are selected!) [Click here to get macro code from the Github](https://github.com/ubc-library-rc/excel/raw/main/content/add_name.rtf)
 {: .step}
 
 ## Creating a Pivot Table

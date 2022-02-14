@@ -8,7 +8,7 @@ nav_order: 1
 
 ## Data Description  
 
-### [Download data (.zip)](https://github.com/ubc-library-rc/excel/raw/main/content/data.zip)
+### [Download data (.zip)](https://github.com/ubc-library-rc/excel/blob/main/content/Data.zip?raw=true)
 
 Second part of the workshop is built around two publicly avaliable csv-files on the populatity of baby names in BC over the past 100 years. 
 

@@ -9,7 +9,7 @@ has_children: true
 
 This is the second part of the Excel workshop series. It is designed for intermediate users who feel comfortable with basic Excel commands (sorting, filtering, absolute and relative references, basic visualizations), but participants of all skill levels are welcomed. We will walk you through the process of importing, cleaning, and exploring a large dataset, while demonstrating some of the less known Excel's capabilities, including OCR, macros, statistical analysis tool pack, and many other time-saving features.
 
-### [Download data (.zip)](https://github.com/ubc-library-rc/excel/raw/main/content/data.zip)
+### [Download data (.zip)](https://github.com/ubc-library-rc/excel/blob/main/content/Data.zip?raw=true)
 
 ### [Microsoft 365 Office for UBC students](https://it.ubc.ca/services/desktop-print-services/software-licensing/microsoft-365-office-students)
 

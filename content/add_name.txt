@@ -1,0 +1,31 @@
+Sub add_name()
+'
+' add_name Macro
+'
+
+'
+    Selection.Copy
+    Sheets("Long Data").Select
+    ActiveSheet.Paste
+    Application.CutCopyMode = False
+    Selection.AutoFill Destination:=ActiveCell.Range("A1:A10"), Type:= _
+        xlFillDefault
+    ActiveCell.Range("A1:A10").Select
+    ActiveCell.Offset(0, 1).Range("A1").Select
+    Sheets("Boys").Select
+    ActiveCell.Offset(0, 1).Range("A1:J1").Select
+    Selection.Copy
+    Sheets("Long Data").Select
+    Selection.PasteSpecial Paste:=xlPasteAll, Operation:=xlNone, SkipBlanks:= _
+        False, Transpose:=True
+    ActiveCell.Offset(-10, 1).Range("A1:A10").Select
+    Application.CutCopyMode = False
+    Selection.Copy
+    Selection.End(xlDown).Select
+    ActiveCell.Offset(1, 0).Range("A1").Select
+    ActiveSheet.Paste
+    Selection.End(xlDown).Select
+    ActiveCell.Offset(1, -2).Range("A1").Select
+    Sheets("Boys").Select
+    ActiveCell.Offset(29, -1).Range("A1").Select
+End Sub

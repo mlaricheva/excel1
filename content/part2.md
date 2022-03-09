@@ -30,7 +30,7 @@ At the end of this workshop, you will be able to:
 ## Schedule
 
 | 0:00 | Welcome and using Zoom|
-| 0:10 | [Introduction](https://ubc-library-rc.github.io/excel/content/tasks.html#introduction): Importing csv into Excel |
+| 0:10 | [Introduction](https://ubc-library-rc.github.io/excel/content/tasks2.html#introduction): Importing csv into Excel |
 | 0:15 | Working with multiple sheets and cell ranges | 
 | 0:20 | [Data Exploration](https://ubc-library-rc.github.io/excel/content/tasks2.html#data-exploration) Conditional formatting, sparklines|   
 | 0:45 | Data from the picture, VLOOKUP and XLOOKUP |
